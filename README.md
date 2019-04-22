@@ -1,6 +1,6 @@
-# iOS SDK Setup #
+# [WebEngage iOS SDK](https://webengage.com/) #
 
-Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-getting-started)
+Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-getting-started).
 
 #### Minimum SDK Requirements ####
 

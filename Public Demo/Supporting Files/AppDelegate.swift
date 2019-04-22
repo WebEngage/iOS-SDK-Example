@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().delegate = self
-        } else {
-            // do nothing
-        }
+        UNUserNotificationCenter.current().delegate = self
         
         AnalyticsHandler.application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = Router.getRootViewController()
+        self.window?.makeKeyAndVisible()
         
         return true
     }
@@ -39,6 +39,6 @@ extension AppDelegate: WEGAppDelegate {
     }
     
     func didReceiveAnonymousID(_ anonymousID: String!, for reason: WEGReason) {
-        print("Anonymous ID:\(anonymousID)  got refreshed for reason: \(reason)")
+        print("Anonymous ID:\(anonymousID!)  got refreshed for reason: \(reason)")
     }
 }
