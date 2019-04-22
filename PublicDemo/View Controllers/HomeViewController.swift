@@ -113,24 +113,14 @@ class HomeViewController: UIViewController {
     
     private func setNavigationView() {
         
-        var wegSDKVersion = "Undefined version"
-        if let sdkVersion = Bundle(for: WebEngage.self).infoDictionary?["CFBundleShortVersionString"] as? String {
-            wegSDKVersion = sdkVersion
-        }
+        let wegSDKVersion = "4.5.0"
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "WebEngageIcon")
         
         let label = UILabel()
-        
-        #if STAGING
-            imageView.image = UIImage(named: "StagingIcon")
-            label.text = "Staging" + " " + wegSDKVersion
-        #else
-            imageView.image = UIImage(named: "WebEngageIcon")
-            label.text = "WebEngage" + " " + wegSDKVersion
-        #endif
-        
+        label.text = "WebEngage" + " " + wegSDKVersion
         label.sizeToFit()
         label.frame = CGRect(x: 35, y: 0, width: label.frame.size.width, height: 30)
         

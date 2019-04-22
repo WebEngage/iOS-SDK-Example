@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TkP-z9-hCp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Events View Controller-->
+        <scene sceneID="yFx-zm-Gg3">
+            <objects>
+                <viewController id="TkP-z9-hCp" customClass="EventsViewController" customModule="ProdExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aLz-UX-rXO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTM-xn-zWW">
+                                <rect key="frame" x="16" y="76" width="64" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="cSo-l0-ur3"/>
+                                    <constraint firstAttribute="height" constant="48" id="pJ1-P2-Rrd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rZ-5T-ZBx">
+                                <rect key="frame" x="155.5" y="20" width="64" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Yac-0e-6yn"/>
+                                    <constraint firstAttribute="width" constant="64" id="b8R-8X-BY0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" red="0.086274509799999996" green="0.49803921569999998" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Event Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="flx-8b-061">
+                                <rect key="frame" x="88" y="76" width="271" height="48"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ST-J5-kIa">
+                                <rect key="frame" x="139.5" y="148" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="0xa-cN-kFC"/>
+                                    <constraint firstAttribute="height" constant="30" id="nXO-uA-XRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Track Event"/>
+                                <connections>
+                                    <action selector="trackEventTapped:" destination="TkP-z9-hCp" eventType="touchUpInside" id="SWP-CV-kew"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odg-xB-1DG">
+                                <rect key="frame" x="110" y="230" width="155" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Track Custom Event"/>
+                                <connections>
+                                    <action selector="trackCustomEventTapped:" destination="TkP-z9-hCp" eventType="touchUpInside" id="zGS-5M-wzz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-NO-iL1">
+                                <rect key="frame" x="314" y="20" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneTapped:" destination="TkP-z9-hCp" eventType="touchUpInside" id="Ce9-B6-B7a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9rZ-5T-ZBx" firstAttribute="top" secondItem="QR3-0w-HVc" secondAttribute="top" id="3Hd-1j-hoo"/>
+                            <constraint firstItem="GTM-xn-zWW" firstAttribute="leading" secondItem="QR3-0w-HVc" secondAttribute="leading" constant="16" id="659-R7-ZiF"/>
+                            <constraint firstItem="0ST-J5-kIa" firstAttribute="centerX" secondItem="aLz-UX-rXO" secondAttribute="centerX" id="9Ji-PH-Pmf"/>
+                            <constraint firstItem="QR3-0w-HVc" firstAttribute="trailing" secondItem="flx-8b-061" secondAttribute="trailing" constant="16" id="DgB-nJ-jgO"/>
+                            <constraint firstItem="yrf-NO-iL1" firstAttribute="bottom" secondItem="9rZ-5T-ZBx" secondAttribute="bottom" id="O7Q-eR-nAR"/>
+                            <constraint firstItem="GTM-xn-zWW" firstAttribute="top" secondItem="9rZ-5T-ZBx" secondAttribute="bottom" constant="8" symbolic="YES" id="PNG-4b-aFZ"/>
+                            <constraint firstItem="Odg-xB-1DG" firstAttribute="top" secondItem="0ST-J5-kIa" secondAttribute="bottom" constant="52" id="PdJ-B4-LA8"/>
+                            <constraint firstItem="0ST-J5-kIa" firstAttribute="top" secondItem="flx-8b-061" secondAttribute="bottom" constant="24" id="RBu-9e-YQ3"/>
+                            <constraint firstItem="yrf-NO-iL1" firstAttribute="top" secondItem="9rZ-5T-ZBx" secondAttribute="top" id="aGY-rd-1M2"/>
+                            <constraint firstItem="flx-8b-061" firstAttribute="leading" secondItem="GTM-xn-zWW" secondAttribute="trailing" constant="8" symbolic="YES" id="eoG-Ta-epk"/>
+                            <constraint firstItem="flx-8b-061" firstAttribute="top" secondItem="GTM-xn-zWW" secondAttribute="top" id="h6i-T3-xR8"/>
+                            <constraint firstItem="Odg-xB-1DG" firstAttribute="centerX" secondItem="aLz-UX-rXO" secondAttribute="centerX" id="nU5-xj-xlI"/>
+                            <constraint firstItem="9rZ-5T-ZBx" firstAttribute="centerX" secondItem="aLz-UX-rXO" secondAttribute="centerX" id="nhH-g5-6e4"/>
+                            <constraint firstItem="QR3-0w-HVc" firstAttribute="trailing" secondItem="yrf-NO-iL1" secondAttribute="trailing" constant="16" id="qs3-se-wAf"/>
+                            <constraint firstItem="flx-8b-061" firstAttribute="bottom" secondItem="GTM-xn-zWW" secondAttribute="bottom" id="shJ-Gy-ePU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QR3-0w-HVc"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="flx-8b-061" id="lib-RV-IkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OS5-Er-ZxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="106"/>
+        </scene>
+    </scenes>
+</document>

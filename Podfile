@@ -5,7 +5,7 @@
 
 platform :ios, '10.0'
 
-target 'Public Demo' do
+target 'PublicDemo' do
   pod 'WebEngage'
 end
 

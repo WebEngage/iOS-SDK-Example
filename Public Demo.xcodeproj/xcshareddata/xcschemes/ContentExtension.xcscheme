@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ECFCD658226DBEA10015961D"
-               BuildableName = "Public Demo.app"
-               BlueprintName = "Public Demo"
+               BuildableName = "PublicDemo.app"
+               BlueprintName = "PublicDemo"
                ReferencedContainer = "container:Public Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -72,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECFCD658226DBEA10015961D"
-            BuildableName = "Public Demo.app"
-            BlueprintName = "Public Demo"
+            BuildableName = "PublicDemo.app"
+            BlueprintName = "PublicDemo"
             ReferencedContainer = "container:Public Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -92,8 +92,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ECFCD658226DBEA10015961D"
-            BuildableName = "Public Demo.app"
-            BlueprintName = "Public Demo"
+            BuildableName = "PublicDemo.app"
+            BlueprintName = "PublicDemo"
             ReferencedContainer = "container:Public Demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91C08A5CEC3998A4ED0ED344 /* libPods-Public Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F8FA242A90831EEAAAD7C8 /* libPods-Public Demo.a */; };
+		2DA59ABD834241AD6B696065 /* libPods-PublicDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0240730FE0B298EA40EA84 /* libPods-PublicDemo.a */; };
 		A9BA214747D9C192F079C778 /* libPods-ServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0882BB539A8FBB6A631688A6 /* libPods-ServiceExtension.a */; };
 		EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC848A2E226DD29F004171EF /* libsqlite3.tbd */; };
 		EC848A3C226DD864004171EF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A3B226DD864004171EF /* Home.storyboard */; };
@@ -17,6 +17,16 @@
 		EC848A44226DDCBD004171EF /* AppInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A43226DDCBD004171EF /* AppInfo.storyboard */; };
 		EC848A46226DDCDA004171EF /* AppInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A45226DDCDA004171EF /* AppInfoViewController.swift */; };
 		EC848A48226DDD05004171EF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A47226DDD05004171EF /* Utils.swift */; };
+		EC848A4A226DDEAB004171EF /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A49226DDEAB004171EF /* UserProfileViewController.swift */; };
+		EC848A4C226DDEB6004171EF /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A4B226DDEB5004171EF /* UserProfile.storyboard */; };
+		EC848A4E226DDEE8004171EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC848A4D226DDEE8004171EF /* SystemConfiguration.framework */; };
+		EC848A50226DDEEF004171EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC848A4F226DDEEF004171EF /* CoreLocation.framework */; };
+		EC848A54226DE0BE004171EF /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A53226DE0BE004171EF /* EventsViewController.swift */; };
+		EC848A56226DE0E2004171EF /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A55226DE0E1004171EF /* Events.storyboard */; };
+		EC848A58226DE113004171EF /* Screens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A57226DE113004171EF /* Screens.storyboard */; };
+		EC848A5A226DE120004171EF /* ScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A59226DE120004171EF /* ScreensViewController.swift */; };
+		EC848A5C226DE164004171EF /* WebViewBridge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A5B226DE164004171EF /* WebViewBridge.storyboard */; };
+		EC848A5E226DE16F004171EF /* WebViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A5D226DE16E004171EF /* WebViewBridge.swift */; };
 		EC9D9864226DC61B00A250AD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D9863226DC61B00A250AD /* NotificationService.swift */; };
 		EC9D9868226DC61B00A250AD /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC9D9861226DC61B00A250AD /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC9D9873226DC62A00A250AD /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9872226DC62A00A250AD /* UserNotifications.framework */; };
@@ -68,14 +78,16 @@
 		0882BB539A8FBB6A631688A6 /* libPods-ServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F34033126EA40301E9A7DB6 /* Pods-ServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-ServiceExtension/Pods-ServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		2133CE9308D57E862D121E30 /* Pods-Public Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Public Demo.release.xcconfig"; path = "Target Support Files/Pods-Public Demo/Pods-Public Demo.release.xcconfig"; sourceTree = "<group>"; };
+		2768C2608BC67802DEFD7731 /* Pods-PublicDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicDemo.release.xcconfig"; path = "Target Support Files/Pods-PublicDemo/Pods-PublicDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2783704E812A704958CD4C82 /* Pods-ContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-ContentExtension/Pods-ContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		49C8ED7AA05BC0508BD6AF64 /* Pods-ContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentExtension.release.xcconfig"; path = "Target Support Files/Pods-ContentExtension/Pods-ContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		4B0240730FE0B298EA40EA84 /* libPods-PublicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E24C61001A82B2DB297A9BE /* libPods-ContentExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContentExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB5CF46BDA2970B21DD0D37 /* Pods-ServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-ServiceExtension/Pods-ServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9C5518B49C069F88F11A23 /* Pods-Public Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Public Demo.debug.xcconfig"; path = "Target Support Files/Pods-Public Demo/Pods-Public Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D9F8FA242A90831EEAAAD7C8 /* libPods-Public Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Public Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC848A2E226DD29F004171EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		EC848A37226DD7A1004171EF /* Public Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Public Demo.entitlements"; sourceTree = "<group>"; };
+		EC848A37226DD7A1004171EF /* PublicDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PublicDemo.entitlements; sourceTree = "<group>"; };
 		EC848A38226DD7CE004171EF /* ServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServiceExtension.entitlements; sourceTree = "<group>"; };
 		EC848A39226DD7E0004171EF /* ContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentExtension.entitlements; sourceTree = "<group>"; };
 		EC848A3B226DD864004171EF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -85,6 +97,16 @@
 		EC848A43226DDCBD004171EF /* AppInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AppInfo.storyboard; sourceTree = "<group>"; };
 		EC848A45226DDCDA004171EF /* AppInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoViewController.swift; sourceTree = "<group>"; };
 		EC848A47226DDD05004171EF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EC848A49226DDEAB004171EF /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		EC848A4B226DDEB5004171EF /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		EC848A4D226DDEE8004171EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC848A4F226DDEEF004171EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC848A53226DE0BE004171EF /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		EC848A55226DE0E1004171EF /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		EC848A57226DE113004171EF /* Screens.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Screens.storyboard; sourceTree = "<group>"; };
+		EC848A59226DE120004171EF /* ScreensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreensViewController.swift; sourceTree = "<group>"; };
+		EC848A5B226DE164004171EF /* WebViewBridge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViewBridge.storyboard; sourceTree = "<group>"; };
+		EC848A5D226DE16E004171EF /* WebViewBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewBridge.swift; sourceTree = "<group>"; };
 		EC9D9861226DC61B00A250AD /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D9863226DC61B00A250AD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		EC9D9865226DC61B00A250AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,12 +119,13 @@
 		EC9D9883226DC6E800A250AD /* ServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC9D9886226DC73200A250AD /* ContentExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContentExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		ECF51814226DCB5900599495 /* AnalyticsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHandler.swift; sourceTree = "<group>"; };
-		ECFCD659226DBEA10015961D /* Public Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Public Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECFCD659226DBEA10015961D /* PublicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFCD65C226DBEA10015961D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFCD663226DBEA20015961D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFCD666226DBEA20015961D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECFCD668226DBEA20015961D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECFCD66F226DBEC10015961D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EF20042281C4B4E2588EBE39 /* Pods-PublicDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicDemo.debug.xcconfig"; path = "Target Support Files/Pods-PublicDemo/Pods-PublicDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +151,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC848A50226DDEEF004171EF /* CoreLocation.framework in Frameworks */,
+				EC848A4E226DDEE8004171EF /* SystemConfiguration.framework in Frameworks */,
 				EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */,
 				ECFCD670226DBEC10015961D /* AdSupport.framework in Frameworks */,
-				91C08A5CEC3998A4ED0ED344 /* libPods-Public Demo.a in Frameworks */,
+				2DA59ABD834241AD6B696065 /* libPods-PublicDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +171,8 @@
 				2133CE9308D57E862D121E30 /* Pods-Public Demo.release.xcconfig */,
 				9EB5CF46BDA2970B21DD0D37 /* Pods-ServiceExtension.debug.xcconfig */,
 				0F34033126EA40301E9A7DB6 /* Pods-ServiceExtension.release.xcconfig */,
+				EF20042281C4B4E2588EBE39 /* Pods-PublicDemo.debug.xcconfig */,
+				2768C2608BC67802DEFD7731 /* Pods-PublicDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -175,7 +202,11 @@
 			isa = PBXGroup;
 			children = (
 				EC848A45226DDCDA004171EF /* AppInfoViewController.swift */,
+				EC848A53226DE0BE004171EF /* EventsViewController.swift */,
 				EC848A3D226DD89F004171EF /* HomeViewController.swift */,
+				EC848A59226DE120004171EF /* ScreensViewController.swift */,
+				EC848A49226DDEAB004171EF /* UserProfileViewController.swift */,
+				EC848A5D226DE16E004171EF /* WebViewBridge.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -184,7 +215,11 @@
 			isa = PBXGroup;
 			children = (
 				EC848A43226DDCBD004171EF /* AppInfo.storyboard */,
+				EC848A55226DE0E1004171EF /* Events.storyboard */,
 				EC848A3B226DD864004171EF /* Home.storyboard */,
+				EC848A57226DE113004171EF /* Screens.storyboard */,
+				EC848A4B226DDEB5004171EF /* UserProfile.storyboard */,
+				EC848A5B226DE164004171EF /* WebViewBridge.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -215,7 +250,7 @@
 		ECFCD650226DBEA10015961D = {
 			isa = PBXGroup;
 			children = (
-				ECFCD65B226DBEA10015961D /* Public Demo */,
+				ECFCD65B226DBEA10015961D /* PublicDemo */,
 				EC9D9862226DC61B00A250AD /* ServiceExtension */,
 				EC9D9876226DC62A00A250AD /* ContentExtension */,
 				ECFCD65A226DBEA10015961D /* Products */,
@@ -227,29 +262,31 @@
 		ECFCD65A226DBEA10015961D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECFCD659226DBEA10015961D /* Public Demo.app */,
+				ECFCD659226DBEA10015961D /* PublicDemo.app */,
 				EC9D9861226DC61B00A250AD /* ServiceExtension.appex */,
 				EC9D9871226DC62A00A250AD /* ContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECFCD65B226DBEA10015961D /* Public Demo */ = {
+		ECFCD65B226DBEA10015961D /* PublicDemo */ = {
 			isa = PBXGroup;
 			children = (
 				ECFCD668226DBEA20015961D /* Info.plist */,
-				EC848A37226DD7A1004171EF /* Public Demo.entitlements */,
+				EC848A37226DD7A1004171EF /* PublicDemo.entitlements */,
 				EC848A3A226DD83C004171EF /* Storyboards */,
 				EC848A34226DD76F004171EF /* Supporting Files */,
 				EC848A35226DD785004171EF /* Utils */,
 				EC848A36226DD78E004171EF /* View Controllers */,
 			);
-			path = "Public Demo";
+			path = PublicDemo;
 			sourceTree = "<group>";
 		};
 		ECFCD66E226DBEC10015961D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC848A4F226DDEEF004171EF /* CoreLocation.framework */,
+				EC848A4D226DDEE8004171EF /* SystemConfiguration.framework */,
 				EC848A2E226DD29F004171EF /* libsqlite3.tbd */,
 				ECFCD66F226DBEC10015961D /* AdSupport.framework */,
 				EC9D9872226DC62A00A250AD /* UserNotifications.framework */,
@@ -257,6 +294,7 @@
 				5E24C61001A82B2DB297A9BE /* libPods-ContentExtension.a */,
 				D9F8FA242A90831EEAAAD7C8 /* libPods-Public Demo.a */,
 				0882BB539A8FBB6A631688A6 /* libPods-ServiceExtension.a */,
+				4B0240730FE0B298EA40EA84 /* libPods-PublicDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -300,9 +338,9 @@
 			productReference = EC9D9871226DC62A00A250AD /* ContentExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		ECFCD658226DBEA10015961D /* Public Demo */ = {
+		ECFCD658226DBEA10015961D /* PublicDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECFCD66B226DBEA20015961D /* Build configuration list for PBXNativeTarget "Public Demo" */;
+			buildConfigurationList = ECFCD66B226DBEA20015961D /* Build configuration list for PBXNativeTarget "PublicDemo" */;
 			buildPhases = (
 				3FE69D451828AEF19A040F60 /* [CP] Check Pods Manifest.lock */,
 				ECFCD655226DBEA10015961D /* Sources */,
@@ -317,9 +355,9 @@
 				EC9D9867226DC61B00A250AD /* PBXTargetDependency */,
 				EC9D987E226DC62A00A250AD /* PBXTargetDependency */,
 			);
-			name = "Public Demo";
+			name = PublicDemo;
 			productName = "Public Demo";
-			productReference = ECFCD659226DBEA10015961D /* Public Demo.app */;
+			productReference = ECFCD659226DBEA10015961D /* PublicDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -382,7 +420,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECFCD658226DBEA10015961D /* Public Demo */,
+				ECFCD658226DBEA10015961D /* PublicDemo */,
 				EC9D9860226DC61B00A250AD /* ServiceExtension */,
 				EC9D9870226DC62A00A250AD /* ContentExtension */,
 			);
@@ -412,7 +450,11 @@
 				EC848A3C226DD864004171EF /* Home.storyboard in Resources */,
 				ECFCD667226DBEA20015961D /* LaunchScreen.storyboard in Resources */,
 				EC848A44226DDCBD004171EF /* AppInfo.storyboard in Resources */,
+				EC848A58226DE113004171EF /* Screens.storyboard in Resources */,
 				ECFCD664226DBEA20015961D /* Assets.xcassets in Resources */,
+				EC848A5C226DE164004171EF /* WebViewBridge.storyboard in Resources */,
+				EC848A4C226DDEB6004171EF /* UserProfile.storyboard in Resources */,
+				EC848A56226DE0E2004171EF /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +498,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Public Demo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PublicDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -493,7 +535,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Public Demo/Pods-Public Demo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PublicDemo/Pods-PublicDemo-frameworks.sh",
 				"${PODS_ROOT}/WebEngage/xc10/WebEngage.framework",
 				"${PODS_ROOT}/WebEngage/xc10/WebEngage.framework.dSYM",
 			);
@@ -506,7 +548,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Public Demo/Pods-Public Demo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PublicDemo/Pods-PublicDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -533,12 +575,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC848A42226DDA50004171EF /* Constants.swift in Sources */,
+				EC848A4A226DDEAB004171EF /* UserProfileViewController.swift in Sources */,
 				EC848A40226DD8E6004171EF /* Router.swift in Sources */,
 				ECF51815226DCB5900599495 /* AnalyticsHandler.swift in Sources */,
 				EC848A48226DDD05004171EF /* Utils.swift in Sources */,
 				ECFCD65D226DBEA10015961D /* AppDelegate.swift in Sources */,
+				EC848A5E226DE16F004171EF /* WebViewBridge.swift in Sources */,
 				EC848A46226DDCDA004171EF /* AppInfoViewController.swift in Sources */,
 				EC848A3E226DD89F004171EF /* HomeViewController.swift in Sources */,
+				EC848A5A226DE120004171EF /* ScreensViewController.swift in Sources */,
+				EC848A54226DE0BE004171EF /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,14 +839,14 @@
 		};
 		ECFCD66C226DBEA20015961D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA9C5518B49C069F88F11A23 /* Pods-Public Demo.debug.xcconfig */;
+			baseConfigurationReference = EF20042281C4B4E2588EBE39 /* Pods-PublicDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Public Demo/Public Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = PublicDemo/PublicDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E59R2H2BZQ;
-				INFOPLIST_FILE = "Public Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PublicDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -815,14 +861,14 @@
 		};
 		ECFCD66D226DBEA20015961D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2133CE9308D57E862D121E30 /* Pods-Public Demo.release.xcconfig */;
+			baseConfigurationReference = 2768C2608BC67802DEFD7731 /* Pods-PublicDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Public Demo/Public Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = PublicDemo/PublicDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E59R2H2BZQ;
-				INFOPLIST_FILE = "Public Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PublicDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -865,7 +911,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECFCD66B226DBEA20015961D /* Build configuration list for PBXNativeTarget "Public Demo" */ = {
+		ECFCD66B226DBEA20015961D /* Build configuration list for PBXNativeTarget "PublicDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECFCD66C226DBEA20015961D /* Debug */,
