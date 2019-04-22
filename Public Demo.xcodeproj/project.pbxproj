@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91C08A5CEC3998A4ED0ED344 /* libPods-Public Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F8FA242A90831EEAAAD7C8 /* libPods-Public Demo.a */; };
 		A9BA214747D9C192F079C778 /* libPods-ServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0882BB539A8FBB6A631688A6 /* libPods-ServiceExtension.a */; };
+		EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC848A2E226DD29F004171EF /* libsqlite3.tbd */; };
 		EC9D9864226DC61B00A250AD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D9863226DC61B00A250AD /* NotificationService.swift */; };
 		EC9D9868226DC61B00A250AD /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC9D9861226DC61B00A250AD /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC9D9873226DC62A00A250AD /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9872226DC62A00A250AD /* UserNotifications.framework */; };
@@ -68,6 +69,7 @@
 		9EB5CF46BDA2970B21DD0D37 /* Pods-ServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-ServiceExtension/Pods-ServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BA9C5518B49C069F88F11A23 /* Pods-Public Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Public Demo.debug.xcconfig"; path = "Target Support Files/Pods-Public Demo/Pods-Public Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		D9F8FA242A90831EEAAAD7C8 /* libPods-Public Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Public Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC848A2E226DD29F004171EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EC9D9861226DC61B00A250AD /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D9863226DC61B00A250AD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		EC9D9865226DC61B00A250AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */,
 				ECFCD670226DBEC10015961D /* AdSupport.framework in Frameworks */,
 				91C08A5CEC3998A4ED0ED344 /* libPods-Public Demo.a in Frameworks */,
 			);
@@ -194,6 +197,7 @@
 		ECFCD66E226DBEC10015961D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC848A2E226DD29F004171EF /* libsqlite3.tbd */,
 				ECFCD66F226DBEC10015961D /* AdSupport.framework */,
 				EC9D9872226DC62A00A250AD /* UserNotifications.framework */,
 				EC9D9874226DC62A00A250AD /* UserNotificationsUI.framework */,
