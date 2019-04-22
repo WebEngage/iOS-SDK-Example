@@ -7,35 +7,38 @@ Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-gettin
 WebEngage SDK is supported for `iOS8` and above. The following frameworks should be linked as part of the Xcode project (Direct Integration).
 
     1. CoreLocation.framework
-    
+
     2. SystemConfiguration.framework
-    
+
     3. AdSupport.framework
-    
+
     4. -lsqlite3
 
 #### There are 2 ways of integrating WebEngage to your existing/new Xcode Project.
 
 #### 1. CocoaPods Integration (Recommended)
 
-  Add the following to your Podfile
+  1. Add the following to your Podfile
 
-    For Xcode 10 and above:
-    
-    target 'WebEngageExample' do
-        pod 'WebEngage'
-    end
+          # For Xcode 10 and above:
 
-    # For Xcode 9:
-    target 'WebEngageExample' do
-        pod 'WebEngage/Xcode9'
-    end
+          target 'WebEngageExample' do
+              pod 'WebEngage'
+          end
 
-Learn about Podfile Specifications [here](https://guides.cocoapods.org/using/the-podfile.html).
+          # For Xcode 9:
+          target 'WebEngageExample' do
+              pod 'WebEngage/Xcode9'
+          end
+
+2. Install WebEngage SDK by running `pod install`
+
 
 Check out Swift Bridging Header details [here](https://docs.webengage.com/docs/ios-getting-started#section-4-support-for-swift).
 
-#### 2. Direct Integration (Manual/) ####
+Learn about Podfile Specifications [here](https://guides.cocoapods.org/using/the-podfile.html).
+
+#### 2. Direct Integration (Manual) ####
 
 1. Download the SDK file [here](https://s3-us-west-2.amazonaws.com/webengage-sdk/ios/latest/WebEngageFramework.zip). Extract the downloaded zip file. In the extracted zip there would be two directories - xc6 and xc7. If you are using Xcode 9 use the `Webengage.framework` within the `xc9` directory. For Xcode 10 and above use the one in `xc10`. Save the appropriate `Webengage.framework` it in a location on your computer.
 
@@ -50,7 +53,6 @@ Check out Swift Bridging Header details [here](https://docs.webengage.com/docs/i
     SystemConfiguration.framework
     CoreLocation.framework
     AdSupport.framework
-    -lsqlite3
     ```
 6. Go to 'Build Settings' tab on the top of the project editor. Search for `Other Linker Flags` option.
 Add `-lsqlite3` under it.
