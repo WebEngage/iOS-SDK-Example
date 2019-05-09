@@ -107,9 +107,9 @@ class HomeViewController: UIViewController {
                 
                 self.setLeftBarButton()
             }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
-
-        self.present(alert, animated: true, completion: nil)
     }
 
     private func setNavigationView() {
