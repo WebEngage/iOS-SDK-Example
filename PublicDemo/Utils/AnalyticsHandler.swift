@@ -10,13 +10,13 @@ import UIKit
 import WebEngage
 
 class AnalyticsHandler {
-    
+
     static func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
-        
+
         WebEngage.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        
+
         WebEngage.sharedInstance().analytics.trackEvent(withName: "app_launched")
-        
-        WebEngage.sharedInstance()?.autoTrackUserLocation(with: .disable)
+
+        WebEngage.sharedInstance()?.autoTrackUserLocation(with: .forCountry)
     }
 }

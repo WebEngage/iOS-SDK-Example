@@ -9,11 +9,11 @@
 import UIKit
 
 struct Router {
-    
+
     static func getRootViewController() -> UIViewController? {
-        
+
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        
+
         return (storyboard.instantiateInitialViewController())
     }
 }

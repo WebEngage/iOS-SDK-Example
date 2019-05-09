@@ -9,10 +9,10 @@
 import Foundation
 
 struct Constants {
-    
+
     static let defaultCode  = "311c5607"
     static let webEngageKey = "WebEngage"
-    
+
     static let loginID          = "UserDefaults.loginID"
     static let licenseCodeKey   = "licenseCode"
 }
