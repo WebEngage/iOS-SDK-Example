@@ -17,6 +17,6 @@ class AnalyticsHandler {
         
         WebEngage.sharedInstance().analytics.trackEvent(withName: "app_launched")
         
-        WebEngage.sharedInstance()?.autoTrackUserLocation(with: .best)
+        WebEngage.sharedInstance()?.autoTrackUserLocation(with: .disable)
     }
 }
