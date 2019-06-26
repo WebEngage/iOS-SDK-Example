@@ -10,6 +10,7 @@
 #import "WEGAnalytics.h"
 #import "WEGAppDelegate.h"
 #import "WEGMobileBridge.h"
+#import "WEGManualIntegration.h"
 #import "WEGInAppNotificationProtocol.h"
 
 FOUNDATION_EXPORT double WebEngageVersionNumber;
