@@ -1,5 +1,10 @@
 # [WebEngage iOS SDK](https://webengage.com/) #
 
+[![Version](https://img.shields.io/cocoapods/v/WebEngage.svg?style=flat)](https://cocoapods.org/pods/WebEngage)
+[![License](https://img.shields.io/cocoapods/l/WebEngage.svg?style=flat)](https://cocoapods.org/pods/WebEngage)
+[![Platform](https://img.shields.io/cocoapods/p/WebEngage.svg)](https://cocoapods.org/pods/WebEngage)
+[![LastUpdated](https://img.shields.io/github/last-commit/WebEngage/iOS-SDK.svg)](https://cocoapods.org/pods/WebEngage)
+
 Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-getting-started).
 
 #### Minimum SDK Requirements ####
