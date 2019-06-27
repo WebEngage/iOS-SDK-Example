@@ -4,3 +4,15 @@ osx_image: xcode10.2
 xcode_scheme: PublicDemo
 xcode_workspace: PublicDemo.xcworkspace
 xcode_destination: platform=iOS Simulator,OS=12.3,name=iPhone X
+env:
+  global:
+    - APP_NAME="PublicDemo"
+    - 'DEVELOPER_NAME="iPhone Developer: Saumitra Bhave (J55JSD8L9T)'
+    - PROFILE_NAME="Distribution"
+    secure: qe/NsLlaMJzWz28Ie5fbyvxg2/Xf4DF7Dr8ilBrX/uWvOlCMRUSSl+0nCNRlTH3mSeUL1Ap+93tO8nex5Ej7XwXq784PiCiavPdjWGzaHkqr1wDN/AVSXlmvRTL4lzGNu4Q7CK3UKJV0reuEqFRv0qn6VJaH243GGBXGpseD8LXnTBGrXUcfVp2Yn+bZYCZXTYJ4FGQbGIRVSCUDL6CDGBsDhsPH//fBxtbv99WgWo6wqPMG30lMaoCzZiOJUkYPx+JFGIu9hU0WwjpoedbGG/v+jkQJ10VmnWcxNaiIA6QNzlQIlS2vu424kQAx+4c/Zx2khs3MEdNO+48ZBWOgMH4WDmSHQLciLoga/GeOU2KQmsgfvQrRyY0gjafHtJHWvIi+tldtOXiOZu8AP9yVk4xXvKBtW9pfDmIEI5JkK0zNYha6y0ctHSG4XsXeWS2/MSjSCDDy2GSD1gxm4mO8U42Hie0viXR+kTtAPcKjRGeQvDKYSXPPgzajlRnRy25AEpIpQejnfXN9FtTnocYUKS0uuz5hpYjuvYXPSaKorbpz6/LbyCp33DtgWiqngREhipW31g281owTDF3qHB2bXF8+O7c0W7EEqAzyiLewG9oQJjcyVMCdZARW+tkheo8SuLgo17nAjZ1oYunC0Xbj4080/Y7nkKSGm3jfZ4Kjb4s=
+branches:
+  only:
+  - master
+  - addTravisCI
+  script:
+- "./scripts/build.sh"
