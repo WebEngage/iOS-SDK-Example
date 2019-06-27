@@ -17,7 +17,7 @@
                BlueprintIdentifier = "ECFCD658226DBEA10015961D"
                BuildableName = "PublicDemo.app"
                BlueprintName = "PublicDemo"
-               ReferencedContainer = "container:Public Demo.xcodeproj">
+               ReferencedContainer = "container:PublicDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "ECFCD658226DBEA10015961D"
             BuildableName = "PublicDemo.app"
             BlueprintName = "PublicDemo"
-            ReferencedContainer = "container:Public Demo.xcodeproj">
+            ReferencedContainer = "container:PublicDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "ECFCD658226DBEA10015961D"
             BuildableName = "PublicDemo.app"
             BlueprintName = "PublicDemo"
-            ReferencedContainer = "container:Public Demo.xcodeproj">
+            ReferencedContainer = "container:PublicDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "ECFCD658226DBEA10015961D"
             BuildableName = "PublicDemo.app"
             BlueprintName = "PublicDemo"
-            ReferencedContainer = "container:Public Demo.xcodeproj">
+            ReferencedContainer = "container:PublicDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
