@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode10.2
+xcode_scheme: PublicDemo
+xcode_workspace: PublicDemo.xcworkspace
+xcode_destination: platform=iOS Simulator,OS=12.3,name=iPhone X
