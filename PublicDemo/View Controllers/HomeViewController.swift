@@ -113,8 +113,14 @@ class HomeViewController: UIViewController {
     }
 
     private func setNavigationView() {
-
-        let wegSDKVersion = "4.5.0"
+        
+        var wegSDKVersion = "0.0.0"
+        
+        if let infoDictionary = Bundle.init(for: WebEngage.self).infoDictionary {
+            if let version = infoDictionary["CFBundleShortVersionString"] as? String {
+                wegSDKVersion = version
+            }
+        }
 
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .scaleAspectFit

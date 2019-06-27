@@ -1,8 +1,9 @@
 # WebEngageAppEx
 
 [![Version](https://img.shields.io/cocoapods/v/WebEngageAppEx.svg?style=flat)](http://cocoapods.org/pods/WebEngageAppEx)
-[![License](https://img.shields.io/cocoapods/l/WebEngageAppEx.svg?style=flat)](http://cocoapods.org/pods/WebEngageAppEx)
+[![License](https://img.shields.io/github/license/WebEngage/WebEngageAppEx.svg)](http://cocoapods.org/pods/WebEngageAppEx)
 [![Platform](https://img.shields.io/cocoapods/p/WebEngageAppEx.svg?style=flat)](http://cocoapods.org/pods/WebEngageAppEx)
+[![LastUpdated](https://img.shields.io/github/last-commit/WebEngage/WebEngageAppEx.svg)](https://cocoapods.org/pods/WebEngageAppEx)
 
 ## Example
 

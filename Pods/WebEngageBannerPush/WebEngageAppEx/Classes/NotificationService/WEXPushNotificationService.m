@@ -37,14 +37,10 @@
     self.contentHandler = contentHandler;
     self.bestAttemptContent = [request.content mutableCopy];
     
-    NSLog(@"WebEngage RichPush Notification Service Called");
-    
     UNNotificationContent *content = request.content;
     NSDictionary *expandableDetails = content.userInfo[@"expandableDetails"];
     
-    NSLog(@"WEG Push Notification Payload: %@", content.userInfo);
-    [[NSUserDefaults standardUserDefaults] setObject:request.content.userInfo forKey:@"WEGPushPayload"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    NSLog(@"Push Notification content: %@", request.content.userInfo);
     
     NSString *style = expandableDetails[@"style"];
     
