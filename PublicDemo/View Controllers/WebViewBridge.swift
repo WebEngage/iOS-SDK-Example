@@ -29,7 +29,7 @@ class WebViewBridge: UIViewController {
         webView.layer.borderWidth = 1
         webView.layer.borderColor = UIColor.red.cgColor
 
-        let url = URL(string: "http://webengage94.tumblr.com/")
+        let url = URL(string: "http://shahrukh931.tumblr.com/")
         let requestObj = URLRequest(url: url! as URL)
         webView.load(requestObj)
 
