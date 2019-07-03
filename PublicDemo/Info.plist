@@ -29,12 +29,12 @@
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright (c) 2019 Webklipper Technologies Pvt Ltd. All rights reserved.</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>To provide location based services</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>To provide location based services</string>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>To provide location based services</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>To provide location based services</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>To provide location based services</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>To provide location based services</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -62,7 +62,7 @@
 	<key>WEGEnableLocationAuthorizationRequest</key>
 	<string>IN_USE</string>
 	<key>WEGLicenseCode</key>
-	<string>311c5607</string>
+	<string>YOUR_LICENSE_CODE</string>
 	<key>WEGLogLevel</key>
 	<string>VERBOSE</string>
 </dict>

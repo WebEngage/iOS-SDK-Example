@@ -27,6 +27,7 @@
 * [Discouraged Object Literal](#discouraged-object-literal)
 * [Discouraged Optional Boolean](#discouraged-optional-boolean)
 * [Discouraged Optional Collection](#discouraged-optional-collection)
+* [Duplicate Enum Cases](#duplicate-enum-cases)
 * [Duplicate Imports](#duplicate-imports)
 * [Dynamic Inline](#dynamic-inline)
 * [Empty Count](#empty-count)
@@ -72,6 +73,7 @@
 * [Legacy Constant](#legacy-constant)
 * [Legacy Constructor](#legacy-constructor)
 * [Legacy Hashing](#legacy-hashing)
+* [Legacy Multiple](#legacy-multiple)
 * [Legacy NSGeometry Functions](#legacy-nsgeometry-functions)
 * [Legacy Random](#legacy-random)
 * [Variable Declaration Whitespace](#variable-declaration-whitespace)
@@ -154,6 +156,7 @@
 * [Unavailable Function](#unavailable-function)
 * [Unneeded Break in Switch](#unneeded-break-in-switch)
 * [Unneeded Parentheses in Closure Argument](#unneeded-parentheses-in-closure-argument)
+* [Unowned Variable Capture](#unowned-variable-capture)
 * [Untyped Error in Catch](#untyped-error-in-catch)
 * [Unused Capture List](#unused-capture-list)
 * [Unused Closure Parameter](#unused-closure-parameter)
@@ -171,7 +174,6 @@
 * [Vertical Whitespace before Closing Braces](#vertical-whitespace-before-closing-braces)
 * [Vertical Whitespace after Opening Braces](#vertical-whitespace-after-opening-braces)
 * [Void Return](#void-return)
-* [Weak Computed Property](#weak-computed-property)
 * [Weak Delegate](#weak-delegate)
 * [XCTest Specific Matcher](#xctest-specific-matcher)
 * [XCTFail Message](#xctfail-message)
@@ -4860,6 +4862,51 @@ enum Foo {
 
 
 
+## Duplicate Enum Cases
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`duplicate_enum_cases` | Enabled | No | lint | No | 3.0.0 
+
+Enum can't contain multiple cases with the same name.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+enum PictureImport {
+    case addImage(image: UIImage)
+    case addData(data: Data)
+}
+```
+
+```swift
+enum A {
+    case add(image: UIImage)
+}
+enum B {
+    case add(image: UIImage)
+}
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+enum PictureImport {
+    case ↓add(image: UIImage)
+    case addURL(url: URL)
+    case ↓add(data: Data)
+}
+```
+
+</details>
+
+
+
 ## Duplicate Imports
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
@@ -7811,6 +7858,13 @@ extension TestViewController: UITableViewDataSource {
 }
 ```
 
+```swift
+// Only extensions
+extension Foo {}
+extension Bar {
+}
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -8213,6 +8267,10 @@ func foo() -> [AnyHashable: Any]!
 func foo() -> [Int]! { return [] }
 ```
 
+```swift
+return self
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -8269,6 +8327,10 @@ context("abc") {
 
 ```swift
 open var computed: String { return foo.bar↓! }
+```
+
+```swift
+return self↓!
 ```
 
 </details>
@@ -10761,6 +10823,82 @@ class Foo: Hashable {
         return bar
     }
 }
+```
+
+</details>
+
+
+
+## Legacy Multiple
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`legacy_multiple` | Disabled | No | idiomatic | No | 5.0.0 
+
+Prefer using the `isMultiple(of:)` function instead of using the remainder operator (`%`).
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+cell.contentView.backgroundColor = indexPath.row.isMultiple(of: 2) ? .gray : .white
+```
+
+```swift
+guard count.isMultiple(of: 2) else { throw DecodingError.dataCorrupted(...) }
+```
+
+```swift
+sanityCheck(bytes > 0 && bytes.isMultiple(of: 4), "capacity must be multiple of 4 bytes")
+```
+
+```swift
+guard let i = reversedNumbers.firstIndex(where: { $0.isMultiple(of: 2) }) else { return }
+```
+
+```swift
+let constant = 56
+let isMultiple = value.isMultiple(of: constant)
+```
+
+```swift
+let constant = 56
+let secret = value % constant == 5
+```
+
+```swift
+let secretValue = (value % 3) + 2
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+cell.contentView.backgroundColor = indexPath.row ↓% 2 == 0 ? .gray : .white
+```
+
+```swift
+cell.contentView.backgroundColor = indexPath.row ↓% 2 != 0 ? .gray : .white
+```
+
+```swift
+guard count ↓% 2 == 0 else { throw DecodingError.dataCorrupted(...) }
+```
+
+```swift
+sanityCheck(bytes > 0 && bytes ↓% 4 == 0, "capacity must be multiple of 4 bytes")
+```
+
+```swift
+guard let i = reversedNumbers.firstIndex(where: { $0 ↓% 2 == 0 }) else { return }
+```
+
+```swift
+let constant = 56
+let isMultiple = value ↓% constant == 0
 ```
 
 </details>
@@ -13298,51 +13436,51 @@ Fallthroughs can only be used if the `case` contains at least one other statemen
 ```swift
 switch myvar {
 case 1:
-  var a = 1
-  fallthrough
+    var a = 1
+    fallthrough
 case 2:
-  var a = 2
+    var a = 2
 }
 ```
 
 ```swift
 switch myvar {
 case "a":
-  var one = 1
-  var two = 2
-  fallthrough
+    var one = 1
+    var two = 2
+    fallthrough
 case "b": /* comment */
-  var three = 3
+    var three = 3
 }
 ```
 
 ```swift
 switch myvar {
 case 1:
-  let one = 1
+    let one = 1
 case 2:
-  // comment
-  var two = 2
+    // comment
+    var two = 2
 }
 ```
 
 ```swift
 switch myvar {
 case MyFunc(x: [1, 2, YourFunc(a: 23)], y: 2):
-  var three = 3
-  fallthrough
+    var three = 3
+    fallthrough
 default:
-  var three = 4
+    var three = 4
 }
 ```
 
 ```swift
 switch myvar {
 case .alpha:
-  var one = 1
+    var one = 1
 case .beta:
-  var three = 3
-  fallthrough
+    var three = 3
+    fallthrough
 default:
     var four = 4
 }
@@ -13352,22 +13490,33 @@ default:
 let aPoint = (1, -1)
 switch aPoint {
 case let (x, y) where x == y:
-  let A = "A"
+    let A = "A"
 case let (x, y) where x == -y:
-  let B = "B"
-  fallthrough
+    let B = "B"
+    fallthrough
 default:
-  let C = "C"
+    let C = "C"
 }
 ```
 
 ```swift
 switch myvar {
 case MyFun(with: { $1 }):
-  let one = 1
-  fallthrough
+    let one = 1
+    fallthrough
 case "abc":
-  let two = 2
+    let two = 2
+}
+```
+
+```swift
+switch enumInstance {
+case .caseA:
+    print("it's a")
+case .caseB:
+    fallthrough
+@unknown default:
+    print("it's not a")
 }
 ```
 
@@ -13378,60 +13527,60 @@ case "abc":
 ```swift
 switch myvar {
 case 1:
-  ↓fallthrough
+    ↓fallthrough
 case 2:
-  var a = 1
+    var a = 1
 }
 ```
 
 ```swift
 switch myvar {
 case 1:
-  var a = 2
+    var a = 2
 case 2:
-  ↓fallthrough
+    ↓fallthrough
 case 3:
-  var a = 3
+    var a = 3
 }
 ```
 
 ```swift
 switch myvar {
 case 1: // comment
-  ↓fallthrough
+    ↓fallthrough
 }
 ```
 
 ```swift
 switch myvar {
 case 1: /* multi
-  line
-  comment */
-  ↓fallthrough
+    line
+    comment */
+    ↓fallthrough
 case 2:
-  var a = 2
+    var a = 2
 }
 ```
 
 ```swift
 switch myvar {
 case MyFunc(x: [1, 2, YourFunc(a: 23)], y: 2):
-  ↓fallthrough
+    ↓fallthrough
 default:
-  var three = 4
+    var three = 4
 }
 ```
 
 ```swift
 switch myvar {
 case .alpha:
-  var one = 1
+    var one = 1
 case .beta:
-  ↓fallthrough
+    ↓fallthrough
 case .gamma:
-  var three = 3
+    var three = 3
 default:
-  var four = 4
+    var four = 4
 }
 ```
 
@@ -13439,20 +13588,20 @@ default:
 let aPoint = (1, -1)
 switch aPoint {
 case let (x, y) where x == y:
-  let A = "A"
+    let A = "A"
 case let (x, y) where x == -y:
-  ↓fallthrough
+    ↓fallthrough
 default:
-  let B = "B"
+    let B = "B"
 }
 ```
 
 ```swift
 switch myvar {
 case MyFun(with: { $1 }):
-  ↓fallthrough
+    ↓fallthrough
 case "abc":
-  let two = 2
+    let two = 2
 }
 ```
 
@@ -13614,7 +13763,7 @@ Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Mi
 --- | --- | --- | --- | --- | ---
 `nslocalizedstring_require_bundle` | Disabled | No | lint | No | 3.0.0 
 
-Calls to NSLocalisedString should specify the bundle which contains the strings file.
+Calls to NSLocalizedString should specify the bundle which contains the strings file.
 
 ### Examples
 
@@ -17070,6 +17219,14 @@ func foo() -> Void!
 
 ```
 
+```swift
+struct A {
+    subscript(key: String) {
+        print(key)
+    }
+}
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -18251,7 +18408,7 @@ Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Mi
 --- | --- | --- | --- | --- | ---
 `superfluous_disable_command` | Enabled | No | lint | No | 3.0.0 
 
-SwiftLint 'disable' commands are superfluous when the disabled rule would not have triggered a violation in the disabled region.
+SwiftLint 'disable' commands are superfluous when the disabled rule would not have triggered a violation in the disabled region. Use " - " if you wish to document a command.
 
 
 
@@ -22942,6 +23099,63 @@ foo.bar { [weak self] ↓(x, y) in }
 
 
 
+## Unowned Variable Capture
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`unowned_variable_capture` | Disabled | No | lint | No | 5.0.0 
+
+Prefer capturing references as weak to avoid potential crashes.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+foo { [weak self] in _ }
+```
+
+```swift
+foo { [weak self] param in _ }
+```
+
+```swift
+foo { [weak bar] in _ }
+```
+
+```swift
+foo { [weak bar] param in _ }
+```
+
+```swift
+foo { bar in _ }
+```
+
+```swift
+foo { $0 }
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+foo { [↓unowned self] in _ }
+```
+
+```swift
+foo { [↓unowned bar] in _ }
+```
+
+```swift
+foo { [bar, ↓unowned self] in _ }
+```
+
+</details>
+
+
+
 ## Untyped Error in Catch
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
@@ -23508,6 +23722,11 @@ import Foundation
 class A {}
 ```
 
+```swift
+import UnknownModule
+func foo(error: Swift.Error) {}
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -23539,6 +23758,12 @@ dispatchMain()
 ↓import Foundation
 // @objc
 class A {}
+```
+
+```swift
+↓import Foundation
+import UnknownModule
+func foo(error: Swift.Error) {}
 ```
 
 </details>
@@ -24800,76 +25025,6 @@ func foo(completion: () -> ↓(Void))
 ```swift
 let foo: (ConfigurationTests) -> () throws -> ↓())
 
-```
-
-</details>
-
-
-
-## Weak Computed Property
-
-Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
---- | --- | --- | --- | --- | ---
-`weak_computed_property` | Enabled | Yes | lint | No | 4.1.0 
-
-Adding weak to a computed property has no effect.
-
-### Examples
-
-<details>
-<summary>Non Triggering Examples</summary>
-
-```swift
-class Foo {
-    weak var delegate: SomeProtocol?
-}
-```
-
-```swift
-class Foo {
-    var delegate: SomeProtocol?
-}
-```
-
-```swift
-class Foo {
-    weak var delegate: SomeProtocol? {
-        didSet {
-            update(with: delegate)
-        }
-    }
-}
-```
-
-```swift
-class Foo {
-    weak var delegate: SomeProtocol? {
-        willSet {
-            update(with: delegate)
-        }
-    }
-}
-```
-
-</details>
-<details>
-<summary>Triggering Examples</summary>
-
-```swift
-class Foo {
-    weak var delegate: SomeProtocol? { return bar() }
-}
-```
-
-```swift
-class Foo {
-    private weak var _delegate: SomeProtocol?
-
-    ↓weak var delegate: SomeProtocol? {
-        get { return _delegate }
-        set { _delegate = newValue }
-    }
-}
 ```
 
 </details>

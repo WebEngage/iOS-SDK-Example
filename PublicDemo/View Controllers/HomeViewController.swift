@@ -10,24 +10,30 @@ import UIKit
 import WebEngage
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var table: UITableView! {
-        didSet {
-            table.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
-        }
-    }
+    
+    //MARK: View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setNavigationView()
-        self.setLeftBarButton()
+        setNavigationView()
+        setLeftBarButton()
+        checkLicenseCode()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.table.reloadData()
+        table.reloadData()
+    }
+    
+    
+    //MARK: View Helpers
+    
+    @IBOutlet weak var table: UITableView! {
+        didSet {
+            table.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
+        }
     }
 
     private func setLeftBarButton() {
@@ -46,15 +52,55 @@ class HomeViewController: UIViewController {
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
     }
-
-    @objc private func handleLeftBarButtonTap(_ sender: UIButton) {
-
-        if ((UserDefaults.standard.value(forKey: Constants.loginID) as? String) != nil) {
-            self.performLogout()
-        } else {
-            self.performLogin()
+    
+    private func setNavigationView() {
+        
+        var wegSDKVersion = "0.0.0"
+        
+        if let infoDictionary = Bundle.init(for: WebEngage.self).infoDictionary {
+            if let version = infoDictionary["CFBundleShortVersionString"] as? String {
+                wegSDKVersion = version
+            }
+        }
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "WebEngageIcon")
+        
+        let label = UILabel()
+        label.text = "WebEngage" + " " + wegSDKVersion
+        label.sizeToFit()
+        label.frame = CGRect(x: 35, y: 0, width: label.frame.size.width, height: 30)
+        
+        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: 35+label.frame.size.width, height: 30))
+        view.addSubview(imageView)
+        view.addSubview(label)
+        
+        self.navigationItem.titleView = view
+    }
+    
+    private func checkLicenseCode() {
+        if let licenseCode = Bundle.main.object(forInfoDictionaryKey: "WEGLicenseCode") as? String {
+            if licenseCode == "YOUR_LICENSE_CODE" {
+                showLicenseCodeAlert()
+            }
+        }
+        else {
+            showLicenseCodeAlert()
         }
     }
+    
+    private func showLicenseCodeAlert() {
+        
+        let alert = UIAlertController(title: "License Code Missing", message: "Enter your License Code in Info.plist", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    //MARK: Action Helpers
 
     private func performLogin() {
 
@@ -94,54 +140,40 @@ class HomeViewController: UIViewController {
     private func performLogout() {
 
         if let loginID = UserDefaults.standard.value(forKey: Constants.loginID) as? String {
-         
+
             let alert = UIAlertController.init(title: "Logout: \(loginID)", message: nil, preferredStyle: .alert)
-            
+
             alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
             alert.addAction(UIAlertAction(title: "Logout", style: .destructive, handler: { (_) in
-                
+
                 WebEngage.sharedInstance()?.user.logout()
                 UserDefaults.standard.removeObject(forKey: Constants.loginID)
-                
+
                 self.table.reloadData()
-                
+
                 self.setLeftBarButton()
             }))
-            
+
             self.present(alert, animated: true, completion: nil)
         }
-    }
-
-    private func setNavigationView() {
-        
-        var wegSDKVersion = "0.0.0"
-        
-        if let infoDictionary = Bundle.init(for: WebEngage.self).infoDictionary {
-            if let version = infoDictionary["CFBundleShortVersionString"] as? String {
-                wegSDKVersion = version
-            }
-        }
-
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "WebEngageIcon")
-
-        let label = UILabel()
-        label.text = "WebEngage" + " " + wegSDKVersion
-        label.sizeToFit()
-        label.frame = CGRect(x: 35, y: 0, width: label.frame.size.width, height: 30)
-
-        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: 35+label.frame.size.width, height: 30))
-        view.addSubview(imageView)
-        view.addSubview(label)
-
-        self.navigationItem.titleView = view
     }
 
     @IBAction func infoTapped(_ sender: UIBarButtonItem) {
         self.presentViewController(for: "AppInfo")
     }
+    
+    @objc private func handleLeftBarButtonTap(_ sender: UIButton) {
+        
+        if ((UserDefaults.standard.value(forKey: Constants.loginID) as? String) != nil) {
+            performLogout()
+        } else {
+            performLogin()
+        }
+    }
 }
+
+
+// MARK: Table Data Source
 
 extension HomeViewController: UITableViewDataSource {
 
@@ -170,7 +202,7 @@ extension HomeViewController: UITableViewDataSource {
             cell = UITableViewCell(style: .subtitle, reuseIdentifier: NSStringFromClass(UITableViewCell.self))
         }
 
-        self.update(cell, at: indexPath)
+        update(cell, at: indexPath)
 
         return cell
     }
@@ -249,6 +281,9 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
+
+//MARK: Table Delegates
+
 extension HomeViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
@@ -269,7 +304,7 @@ extension HomeViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        self.handleDidSelectCell(at: indexPath)
+        handleDidSelectCell(at: indexPath)
 
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -356,13 +391,10 @@ extension HomeViewController: UITableViewDelegate {
         }
 
         if UIApplication.shared.canOpenURL(settingsUrl) {
-            if #available(iOS 10.0, *) {
-                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
-                    print("Settings are opened: \(success)")
-                })
-            } else {
-                // Fallback on earlier versions
-            }
+         
+            UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                print("Settings are opened: \(success)")
+            })
         }
     }
 
