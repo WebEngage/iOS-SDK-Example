@@ -1,6 +1,5 @@
 # iOS SDK Setup #
-[![Version](https://img.shields.io/cocoapods/v/WebEngage.svg?style=flat)](http://cocoapods.org/pods/WebEngage)
-[![License](https://img.shields.io/cocoapods/l/WebEngage.svg?style=flat)](http://cocoapods.org/pods/WebEngage)
+[![Version](https://img.shields.io/cocoapods/v/WebEngage.svg?style=flat)](https://cocoapods.org/pods/WebEngage)
 [![Platform](https://img.shields.io/cocoapods/p/WebEngage.svg)](https://cocoapods.org/pods/WebEngage)
 [![LastUpdated](https://img.shields.io/github/last-commit/WebEngage/podspecs.svg)](https://cocoapods.org/pods/WebEngage)
 
@@ -10,7 +9,7 @@ Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-gettin
 
 #### Minimum SDK Requirements ####
 
-> WebEngage SDK is supported for `iOS8` and above. The following frameworks should be linked as part of the Xcode project (Direct Integration). Specifically:
+> WebEngage SDK is supported for `iOS 8` and above. The following frameworks should be linked as part of the Xcode project (Direct Integration). Specifically:
     1. CoreLocation.framework
     2. SystemConfiguration.framework
     3. AdSupport.framework

@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, WEGReason){
  *  This is a callback that gets called whenever a push notification is clicked, and provide deeplink and user data associated with the notification
  *
  *  @param deeplink String sent for deep linking from WebEngage dashboard
- *  @param userData User data associated with the notification
+ *  @param data User-data associated with the notification
  */
 - (void)WEGHandleDeeplink:(NSString *)deeplink userData:(NSDictionary *)data;
 

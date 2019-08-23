@@ -10,8 +10,8 @@ import UIKit
 import WebEngage
 
 class HomeViewController: UIViewController {
-    
-    //MARK: View Lifecycle
+
+    // MARK: View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +26,9 @@ class HomeViewController: UIViewController {
 
         table.reloadData()
     }
-    
-    
-    //MARK: View Helpers
-    
+
+    // MARK: View Helpers
+
     @IBOutlet weak var table: UITableView! {
         didSet {
             table.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
@@ -52,55 +51,53 @@ class HomeViewController: UIViewController {
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
     }
-    
+
     private func setNavigationView() {
-        
+
         var wegSDKVersion = "0.0.0"
-        
+
         if let infoDictionary = Bundle.init(for: WebEngage.self).infoDictionary {
             if let version = infoDictionary["CFBundleShortVersionString"] as? String {
                 wegSDKVersion = version
             }
         }
-        
+
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "WebEngageIcon")
-        
+
         let label = UILabel()
         label.text = "WebEngage" + " " + wegSDKVersion
         label.sizeToFit()
         label.frame = CGRect(x: 35, y: 0, width: label.frame.size.width, height: 30)
-        
+
         let view = UIView.init(frame: CGRect(x: 0, y: 0, width: 35+label.frame.size.width, height: 30))
         view.addSubview(imageView)
         view.addSubview(label)
-        
+
         self.navigationItem.titleView = view
     }
-    
+
     private func checkLicenseCode() {
         if let licenseCode = Bundle.main.object(forInfoDictionaryKey: "WEGLicenseCode") as? String {
             if licenseCode == "YOUR_LICENSE_CODE" {
                 showLicenseCodeAlert()
             }
-        }
-        else {
+        } else {
             showLicenseCodeAlert()
         }
     }
-    
+
     private func showLicenseCodeAlert() {
-        
+
         let alert = UIAlertController(title: "License Code Missing", message: "Enter your License Code in Info.plist", preferredStyle: .alert)
-        
+
         alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
-        
+
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-    //MARK: Action Helpers
+
+    // MARK: Action Helpers
 
     private func performLogin() {
 
@@ -161,9 +158,9 @@ class HomeViewController: UIViewController {
     @IBAction func infoTapped(_ sender: UIBarButtonItem) {
         self.presentViewController(for: "AppInfo")
     }
-    
+
     @objc private func handleLeftBarButtonTap(_ sender: UIButton) {
-        
+
         if ((UserDefaults.standard.value(forKey: Constants.loginID) as? String) != nil) {
             performLogout()
         } else {
@@ -171,7 +168,6 @@ class HomeViewController: UIViewController {
         }
     }
 }
-
 
 // MARK: Table Data Source
 
@@ -281,8 +277,7 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
-
-//MARK: Table Delegates
+// MARK: Table Delegates
 
 extension HomeViewController: UITableViewDelegate {
 
@@ -391,7 +386,7 @@ extension HomeViewController: UITableViewDelegate {
         }
 
         if UIApplication.shared.canOpenURL(settingsUrl) {
-         
+
             UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
                 print("Settings are opened: \(success)")
             })
