@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = WebEngage;
+			productName = WebEngage;
 		};
 /* End PBXAggregateTarget section */
 
@@ -75,27 +76,27 @@
 		0E6E8EFCBFF0381C45E02A3044EF30FA /* WebEngageBannerPush-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WebEngageBannerPush-dummy.m"; sourceTree = "<group>"; };
 		1F293032BEB101D77CCD39607F621317 /* WEXUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXUser.m; path = WebEngageAppEx/Classes/CoreApi/WEXUser.m; sourceTree = "<group>"; };
 		26AC5D7656C69F6E6B8EFED34D011C0D /* Pods-ContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		2A7515D413777721D104C72743457FE1 /* libWebEngageAppEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebEngageAppEx.a; path = libWebEngageAppEx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7515D413777721D104C72743457FE1 /* libWebEngageAppEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebEngageAppEx.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E974CF965CFB434B5A7E008EE1FDB4 /* Pods-ServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ServiceExtension-dummy.m"; sourceTree = "<group>"; };
 		34E827B55A4599308F3440137468DCDA /* WebEngage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebEngage.xcconfig; sourceTree = "<group>"; };
-		40222A1513330905A3BFFF88EC2EBC90 /* libPods-ServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ServiceExtension.a"; path = "libPods-ServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40222A1513330905A3BFFF88EC2EBC90 /* libPods-ServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46AAF35E0672871CB1D55DA7094C2488 /* WEXRichPushNotificationViewController+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WEXRichPushNotificationViewController+Private.h"; path = "WebEngageAppEx/Classes/ContentExtension/WEXRichPushNotificationViewController+Private.h"; sourceTree = "<group>"; };
 		48A1719F5CF0029D157B706AC92C3F02 /* WEXRatingPushNotificationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXRatingPushNotificationViewController.h; path = WebEngageAppEx/Classes/ContentExtension/WEXRatingPushNotificationViewController.h; sourceTree = "<group>"; };
 		48CD62643ABEEFC8552117B1167FE16C /* WEXRichPushNotificationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXRichPushNotificationViewController.h; path = WebEngageAppEx/Classes/ContentExtension/WEXRichPushNotificationViewController.h; sourceTree = "<group>"; };
 		4AB90B68AFF5E8766C132FE96B5F18CA /* WebEngageBannerPush-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebEngageBannerPush-prefix.pch"; sourceTree = "<group>"; };
 		4BD7A9698FFE8EBA3C519F7F3B34B6A9 /* Pods-PublicDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PublicDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C610B68F58BEC3699A31FA8FD937F05 /* Pods-ContentExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContentExtension-acknowledgements.plist"; sourceTree = "<group>"; };
-		4F725279E80573FEFBB2C62966669604 /* libWebEngageBannerPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWebEngageBannerPush.a; path = libWebEngageBannerPush.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F725279E80573FEFBB2C62966669604 /* libWebEngageBannerPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebEngageBannerPush.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF7DFCA454645B8304F1137808F6E8F /* WebEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebEngage.framework; path = xc10/WebEngage.framework; sourceTree = "<group>"; };
 		5DB81B01804D74DDF105D3E2C4EC0623 /* WEXCarouselPushNotificationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXCarouselPushNotificationViewController.m; path = WebEngageAppEx/Classes/ContentExtension/WEXCarouselPushNotificationViewController.m; sourceTree = "<group>"; };
 		5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebEngageAppEx.xcconfig; sourceTree = "<group>"; };
 		766A8D5D555D3B4C7B936EA22CAA782A /* Pods-ServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E1483C5081B1ACA87586F4C8EE45CFF /* WEXRatingPushNotificationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXRatingPushNotificationViewController.m; path = WebEngageAppEx/Classes/ContentExtension/WEXRatingPushNotificationViewController.m; sourceTree = "<group>"; };
-		808A51DE721B91827F9F9651CDE678AD /* libPods-ContentExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ContentExtension.a"; path = "libPods-ContentExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808A51DE721B91827F9F9651CDE678AD /* libPods-ContentExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ContentExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC3DB74F3B8FA7A4E3569C6C44D9F45 /* WebEngageAppEx-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WebEngageAppEx-prefix.pch"; sourceTree = "<group>"; };
 		8B5D27AA1752D1B646F397C8D930D0A3 /* Pods-PublicDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PublicDemo-frameworks.sh"; sourceTree = "<group>"; };
 		9A09D68D4B74EB991FA2A304E8B077B2 /* WEXCoreUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXCoreUtils.m; path = WebEngageAppEx/Classes/CoreApi/WEXCoreUtils.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7056297D842B9E7A6CFB10113F60C71 /* WEXRichPushNotificationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXRichPushNotificationViewController.m; path = WebEngageAppEx/Classes/ContentExtension/WEXRichPushNotificationViewController.m; sourceTree = "<group>"; };
 		AC1C430B42771B68ED4F3BF286280972 /* WEXRichPushLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXRichPushLayout.m; path = WebEngageAppEx/Classes/ContentExtension/WEXRichPushLayout.m; sourceTree = "<group>"; };
 		B017A0C8E6D1A9C9840A646AF5924C72 /* Pods-PublicDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PublicDemo-dummy.m"; sourceTree = "<group>"; };
@@ -106,7 +107,7 @@
 		BF2D0AF822C44015681807019EBAD832 /* WEXUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXUser.h; path = WebEngageAppEx/Classes/CoreApi/WEXUser.h; sourceTree = "<group>"; };
 		C1572671F044A7E7897BB6E7C48250A5 /* Pods-ServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA84E3A8B8524E23C159C19A4282E2D4 /* Pods-PublicDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PublicDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		CBD4D1B8F5F7D664DC0516512BA2696E /* libPods-PublicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PublicDemo.a"; path = "libPods-PublicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD4D1B8F5F7D664DC0516512BA2696E /* libPods-PublicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99AA9D00A490D2E22A191381F30D8A4 /* WEXCoreUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXCoreUtils.h; path = WebEngageAppEx/Classes/CoreApi/WEXCoreUtils.h; sourceTree = "<group>"; };
 		DF95E816DE2419640EE74E258149AD2B /* WEXPushNotificationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXPushNotificationService.m; path = WebEngageAppEx/Classes/NotificationService/WEXPushNotificationService.m; sourceTree = "<group>"; };
 		E3518A9C6DDD91DF88189568870EA1EA /* Pods-PublicDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PublicDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,7 +177,6 @@
 				DF95E816DE2419640EE74E258149AD2B /* WEXPushNotificationService.m */,
 				7C0895A5B2E5A3968529762E34AF5A60 /* Support Files */,
 			);
-			name = WebEngageBannerPush;
 			path = WebEngageBannerPush;
 			sourceTree = "<group>";
 		};
@@ -209,7 +209,6 @@
 				86F25B9242C045AA7F1E121D2F5D71D8 /* CoreApi */,
 				A2CDD072C65650BD77DEDC7D64A466A7 /* Support Files */,
 			);
-			name = WebEngageAppEx;
 			path = WebEngageAppEx;
 			sourceTree = "<group>";
 		};
@@ -303,7 +302,6 @@
 				DD25CB349A1C11080B7989033F8859E8 /* Support Files */,
 				F1B72EAEC1F4DFA378FA23492444E1FF /* Xcode10 */,
 			);
-			name = WebEngage;
 			path = WebEngage;
 			sourceTree = "<group>";
 		};
@@ -507,6 +505,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = E2E945877BC4A032A472C7003E493411 /* Products */;

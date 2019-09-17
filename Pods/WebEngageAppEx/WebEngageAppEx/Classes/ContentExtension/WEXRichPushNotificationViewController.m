@@ -48,20 +48,10 @@ API_AVAILABLE(ios(10.0))
     }
 }
 
-- (void)viewDidDisappear:(BOOL)animated {
-    
-    [super viewDidDisappear:animated];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    
-    [super viewWillAppear:animated];
-}
-
 - (void)viewWillDisappear:(BOOL)animated {
     
-    [self updateActivityWithObject:[NSNumber numberWithBool:YES] forKey:@"collapsed"];
     [super viewWillDisappear:animated];
+    [self updateActivityWithObject:[NSNumber numberWithBool:YES] forKey:@"collapsed"];
 }
 
 - (BOOL)canBecomeFirstResponder {
