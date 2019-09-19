@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>WEGAlternateAppSupport</key>
+	<true/>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>
@@ -62,7 +64,7 @@
 	<key>WEGEnableLocationAuthorizationRequest</key>
 	<string>IN_USE</string>
 	<key>WEGLicenseCode</key>
-	<string>311c5607</string>
+	<string>YOUR_LICENSE_CODE</string>
 	<key>WEGLogLevel</key>
 	<string>VERBOSE</string>
 </dict>
