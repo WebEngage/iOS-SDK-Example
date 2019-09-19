@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0068856113814BC9D266BF3F /* libPods-ServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C193AE0829C77E4BD1287DA /* libPods-ServiceExtension.a */; };
-		BD6FF4972F98C91E47A4606C /* libPods-ContentExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519F92FA5D02EACF89F4229 /* libPods-ContentExtension.a */; };
+		3D43B09C0F118BFD67FA4012 /* libPods-ContentExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519F92FA5D02EACF89F4229 /* libPods-ContentExtension.a */; };
+		6C53C3730AA00AAABAA54454 /* libPods-ServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C193AE0829C77E4BD1287DA /* libPods-ServiceExtension.a */; };
 		BFA32ACFDD81CF733B99F122 /* libPods-PublicDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C13ED44139588E90AA876142 /* libPods-PublicDemo.a */; };
+		EC678D6A23339E550010DC7E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC678D6923339E550010DC7E /* NotificationService.swift */; };
+		EC678D6E23339E550010DC7E /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC678D6723339E550010DC7E /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC678D7723339E710010DC7E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9872226DC62A00A250AD /* UserNotifications.framework */; };
+		EC678D7823339E710010DC7E /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9874226DC62A00A250AD /* UserNotificationsUI.framework */; };
+		EC678D7B23339E710010DC7E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC678D7A23339E710010DC7E /* NotificationViewController.swift */; };
+		EC678D7E23339E710010DC7E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC678D7C23339E710010DC7E /* MainInterface.storyboard */; };
+		EC678D8223339E710010DC7E /* ContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC678D7623339E710010DC7E /* ContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EC848A2E226DD29F004171EF /* libsqlite3.tbd */; };
 		EC848A3C226DD864004171EF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A3B226DD864004171EF /* Home.storyboard */; };
 		EC848A3E226DD89F004171EF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A3D226DD89F004171EF /* HomeViewController.swift */; };
@@ -28,13 +35,6 @@
 		EC848A5A226DE120004171EF /* ScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A59226DE120004171EF /* ScreensViewController.swift */; };
 		EC848A5C226DE164004171EF /* WebViewBridge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC848A5B226DE164004171EF /* WebViewBridge.storyboard */; };
 		EC848A5E226DE16F004171EF /* WebViewBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC848A5D226DE16E004171EF /* WebViewBridge.swift */; };
-		EC9D9864226DC61B00A250AD /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D9863226DC61B00A250AD /* NotificationService.swift */; };
-		EC9D9868226DC61B00A250AD /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC9D9861226DC61B00A250AD /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		EC9D9873226DC62A00A250AD /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9872226DC62A00A250AD /* UserNotifications.framework */; };
-		EC9D9875226DC62A00A250AD /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9874226DC62A00A250AD /* UserNotificationsUI.framework */; };
-		EC9D9878226DC62A00A250AD /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D9877226DC62A00A250AD /* NotificationViewController.swift */; };
-		EC9D987B226DC62A00A250AD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9D9879226DC62A00A250AD /* MainInterface.storyboard */; };
-		EC9D987F226DC62A00A250AD /* ContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC9D9871226DC62A00A250AD /* ContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ECF51815226DCB5900599495 /* AnalyticsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF51814226DCB5900599495 /* AnalyticsHandler.swift */; };
 		ECFCD65D226DBEA10015961D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFCD65C226DBEA10015961D /* AppDelegate.swift */; };
 		ECFCD664226DBEA20015961D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFCD663226DBEA20015961D /* Assets.xcassets */; };
@@ -43,18 +43,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC9D9866226DC61B00A250AD /* PBXContainerItemProxy */ = {
+		EC678D6C23339E550010DC7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECFCD651226DBEA10015961D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC9D9860226DC61B00A250AD;
+			remoteGlobalIDString = EC678D6623339E550010DC7E;
 			remoteInfo = ServiceExtension;
 		};
-		EC9D987D226DC62A00A250AD /* PBXContainerItemProxy */ = {
+		EC678D8023339E710010DC7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECFCD651226DBEA10015961D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC9D9870226DC62A00A250AD;
+			remoteGlobalIDString = EC678D7523339E710010DC7E;
 			remoteInfo = ContentExtension;
 		};
 /* End PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				EC9D987F226DC62A00A250AD /* ContentExtension.appex in Embed App Extensions */,
-				EC9D9868226DC61B00A250AD /* ServiceExtension.appex in Embed App Extensions */,
+				EC678D8223339E710010DC7E /* ContentExtension.appex in Embed App Extensions */,
+				EC678D6E23339E550010DC7E /* ServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,10 +84,19 @@
 		74BFEC1DADCC3771AE96F679 /* Pods-ServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-ServiceExtension/Pods-ServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		BC30AC3619FF1C1F696D9BD7 /* Pods-ContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-ContentExtension/Pods-ContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		C13ED44139588E90AA876142 /* libPods-PublicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678D6723339E550010DC7E /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678D6923339E550010DC7E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EC678D6B23339E550010DC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC678D7623339E710010DC7E /* ContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC678D7A23339E710010DC7E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		EC678D7D23339E710010DC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		EC678D7F23339E710010DC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC678D8623339E8A0010DC7E /* ContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentExtension.entitlements; sourceTree = "<group>"; };
+		EC678D8723339ECC0010DC7E /* ServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServiceExtension.entitlements; sourceTree = "<group>"; };
+		EC678D8823339F410010DC7E /* ServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC6D02DF23339FA600EE5251 /* ContentExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContentExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		EC848A2E226DD29F004171EF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		EC848A37226DD7A1004171EF /* PublicDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PublicDemo.entitlements; sourceTree = "<group>"; };
-		EC848A38226DD7CE004171EF /* ServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ServiceExtension.entitlements; sourceTree = "<group>"; };
-		EC848A39226DD7E0004171EF /* ContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContentExtension.entitlements; sourceTree = "<group>"; };
 		EC848A3B226DD864004171EF /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EC848A3D226DD89F004171EF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC848A3F226DD8E6004171EF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -105,17 +114,8 @@
 		EC848A59226DE120004171EF /* ScreensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreensViewController.swift; sourceTree = "<group>"; };
 		EC848A5B226DE164004171EF /* WebViewBridge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViewBridge.storyboard; sourceTree = "<group>"; };
 		EC848A5D226DE16E004171EF /* WebViewBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewBridge.swift; sourceTree = "<group>"; };
-		EC9D9861226DC61B00A250AD /* ServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC9D9863226DC61B00A250AD /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
-		EC9D9865226DC61B00A250AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9D9871226DC62A00A250AD /* ContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9D9872226DC62A00A250AD /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		EC9D9874226DC62A00A250AD /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		EC9D9877226DC62A00A250AD /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		EC9D987A226DC62A00A250AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		EC9D987C226DC62A00A250AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC9D9883226DC6E800A250AD /* ServiceExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ServiceExtension-Bridging-Header.h"; sourceTree = "<group>"; };
-		EC9D9886226DC73200A250AD /* ContentExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContentExtension-Bridging-Header.h"; sourceTree = "<group>"; };
 		ECF51814226DCB5900599495 /* AnalyticsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsHandler.swift; sourceTree = "<group>"; };
 		ECFCD659226DBEA10015961D /* PublicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFCD65C226DBEA10015961D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,21 +126,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC9D985E226DC61B00A250AD /* Frameworks */ = {
+		EC678D6423339E550010DC7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0068856113814BC9D266BF3F /* libPods-ServiceExtension.a in Frameworks */,
+				6C53C3730AA00AAABAA54454 /* libPods-ServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC9D986E226DC62A00A250AD /* Frameworks */ = {
+		EC678D7323339E710010DC7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D9875226DC62A00A250AD /* UserNotificationsUI.framework in Frameworks */,
-				EC9D9873226DC62A00A250AD /* UserNotifications.framework in Frameworks */,
-				BD6FF4972F98C91E47A4606C /* libPods-ContentExtension.a in Frameworks */,
+				EC678D7823339E710010DC7E /* UserNotificationsUI.framework in Frameworks */,
+				EC678D7723339E710010DC7E /* UserNotifications.framework in Frameworks */,
+				3D43B09C0F118BFD67FA4012 /* libPods-ContentExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +170,29 @@
 				74BFEC1DADCC3771AE96F679 /* Pods-ServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC678D6823339E550010DC7E /* ServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EC678D8723339ECC0010DC7E /* ServiceExtension.entitlements */,
+				EC678D6923339E550010DC7E /* NotificationService.swift */,
+				EC678D6B23339E550010DC7E /* Info.plist */,
+				EC678D8823339F410010DC7E /* ServiceExtension-Bridging-Header.h */,
+			);
+			path = ServiceExtension;
+			sourceTree = "<group>";
+		};
+		EC678D7923339E710010DC7E /* ContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EC678D8623339E8A0010DC7E /* ContentExtension.entitlements */,
+				EC678D7A23339E710010DC7E /* NotificationViewController.swift */,
+				EC678D7C23339E710010DC7E /* MainInterface.storyboard */,
+				EC678D7F23339E710010DC7E /* Info.plist */,
+				EC6D02DF23339FA600EE5251 /* ContentExtension-Bridging-Header.h */,
+			);
+			path = ContentExtension;
 			sourceTree = "<group>";
 		};
 		EC848A34226DD76F004171EF /* Supporting Files */ = {
@@ -219,35 +242,12 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		EC9D9862226DC61B00A250AD /* ServiceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				EC848A38226DD7CE004171EF /* ServiceExtension.entitlements */,
-				EC9D9863226DC61B00A250AD /* NotificationService.swift */,
-				EC9D9865226DC61B00A250AD /* Info.plist */,
-				EC9D9883226DC6E800A250AD /* ServiceExtension-Bridging-Header.h */,
-			);
-			path = ServiceExtension;
-			sourceTree = "<group>";
-		};
-		EC9D9876226DC62A00A250AD /* ContentExtension */ = {
-			isa = PBXGroup;
-			children = (
-				EC848A39226DD7E0004171EF /* ContentExtension.entitlements */,
-				EC9D9877226DC62A00A250AD /* NotificationViewController.swift */,
-				EC9D9879226DC62A00A250AD /* MainInterface.storyboard */,
-				EC9D987C226DC62A00A250AD /* Info.plist */,
-				EC9D9886226DC73200A250AD /* ContentExtension-Bridging-Header.h */,
-			);
-			path = ContentExtension;
-			sourceTree = "<group>";
-		};
 		ECFCD650226DBEA10015961D = {
 			isa = PBXGroup;
 			children = (
 				ECFCD65B226DBEA10015961D /* PublicDemo */,
-				EC9D9862226DC61B00A250AD /* ServiceExtension */,
-				EC9D9876226DC62A00A250AD /* ContentExtension */,
+				EC678D6823339E550010DC7E /* ServiceExtension */,
+				EC678D7923339E710010DC7E /* ContentExtension */,
 				ECFCD65A226DBEA10015961D /* Products */,
 				ECFCD66E226DBEC10015961D /* Frameworks */,
 				8362A40E37EC473A97A79CCF /* Pods */,
@@ -258,8 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				ECFCD659226DBEA10015961D /* PublicDemo.app */,
-				EC9D9861226DC61B00A250AD /* ServiceExtension.appex */,
-				EC9D9871226DC62A00A250AD /* ContentExtension.appex */,
+				EC678D6723339E550010DC7E /* ServiceExtension.appex */,
+				EC678D7623339E710010DC7E /* ContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,14 +296,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC9D9860226DC61B00A250AD /* ServiceExtension */ = {
+		EC678D6623339E550010DC7E /* ServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9D986B226DC61B00A250AD /* Build configuration list for PBXNativeTarget "ServiceExtension" */;
+			buildConfigurationList = EC678D6F23339E550010DC7E /* Build configuration list for PBXNativeTarget "ServiceExtension" */;
 			buildPhases = (
-				4C39E150A8F950E4B0A08F1E /* [CP] Check Pods Manifest.lock */,
-				EC9D985D226DC61B00A250AD /* Sources */,
-				EC9D985E226DC61B00A250AD /* Frameworks */,
-				EC9D985F226DC61B00A250AD /* Resources */,
+				28EFA7F922DD53FA2120EC1D /* [CP] Check Pods Manifest.lock */,
+				EC678D6323339E550010DC7E /* Sources */,
+				EC678D6423339E550010DC7E /* Frameworks */,
+				EC678D6523339E550010DC7E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -311,17 +311,17 @@
 			);
 			name = ServiceExtension;
 			productName = ServiceExtension;
-			productReference = EC9D9861226DC61B00A250AD /* ServiceExtension.appex */;
+			productReference = EC678D6723339E550010DC7E /* ServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		EC9D9870226DC62A00A250AD /* ContentExtension */ = {
+		EC678D7523339E710010DC7E /* ContentExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC9D9880226DC62A00A250AD /* Build configuration list for PBXNativeTarget "ContentExtension" */;
+			buildConfigurationList = EC678D8323339E710010DC7E /* Build configuration list for PBXNativeTarget "ContentExtension" */;
 			buildPhases = (
-				3E3F7AAC3490233E4CB6FA1D /* [CP] Check Pods Manifest.lock */,
-				EC9D986D226DC62A00A250AD /* Sources */,
-				EC9D986E226DC62A00A250AD /* Frameworks */,
-				EC9D986F226DC62A00A250AD /* Resources */,
+				C23FBE2E456092F607B1E5DB /* [CP] Check Pods Manifest.lock */,
+				EC678D7223339E710010DC7E /* Sources */,
+				EC678D7323339E710010DC7E /* Frameworks */,
+				EC678D7423339E710010DC7E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -329,7 +329,7 @@
 			);
 			name = ContentExtension;
 			productName = ContentExtension;
-			productReference = EC9D9871226DC62A00A250AD /* ContentExtension.appex */;
+			productReference = EC678D7623339E710010DC7E /* ContentExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		ECFCD658226DBEA10015961D /* PublicDemo */ = {
@@ -346,8 +346,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				EC9D9867226DC61B00A250AD /* PBXTargetDependency */,
-				EC9D987E226DC62A00A250AD /* PBXTargetDependency */,
+				EC678D6D23339E550010DC7E /* PBXTargetDependency */,
+				EC678D8123339E710010DC7E /* PBXTargetDependency */,
 			);
 			name = PublicDemo;
 			productName = "Public Demo";
@@ -360,13 +360,13 @@
 		ECFCD651226DBEA10015961D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Yogesh Singh";
 				TargetAttributes = {
-					EC9D9860226DC61B00A250AD = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+					EC678D6623339E550010DC7E = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -376,9 +376,9 @@
 							};
 						};
 					};
-					EC9D9870226DC62A00A250AD = {
-						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+					EC678D7523339E710010DC7E = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -415,25 +415,25 @@
 			projectRoot = "";
 			targets = (
 				ECFCD658226DBEA10015961D /* PublicDemo */,
-				EC9D9860226DC61B00A250AD /* ServiceExtension */,
-				EC9D9870226DC62A00A250AD /* ContentExtension */,
+				EC678D6623339E550010DC7E /* ServiceExtension */,
+				EC678D7523339E710010DC7E /* ContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC9D985F226DC61B00A250AD /* Resources */ = {
+		EC678D6523339E550010DC7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC9D986F226DC62A00A250AD /* Resources */ = {
+		EC678D7423339E710010DC7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D987B226DC62A00A250AD /* MainInterface.storyboard in Resources */,
+				EC678D7E23339E710010DC7E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,29 +455,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3E3F7AAC3490233E4CB6FA1D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ContentExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4C39E150A8F950E4B0A08F1E /* [CP] Check Pods Manifest.lock */ = {
+		28EFA7F922DD53FA2120EC1D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,6 +494,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PublicDemo/Pods-PublicDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C23FBE2E456092F607B1E5DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContentExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E91BCD4AD0429C55E754FC8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,19 +541,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC9D985D226DC61B00A250AD /* Sources */ = {
+		EC678D6323339E550010DC7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D9864226DC61B00A250AD /* NotificationService.swift in Sources */,
+				EC678D6A23339E550010DC7E /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC9D986D226DC62A00A250AD /* Sources */ = {
+		EC678D7223339E710010DC7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9D9878226DC62A00A250AD /* NotificationViewController.swift in Sources */,
+				EC678D7B23339E710010DC7E /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,23 +578,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC9D9867226DC61B00A250AD /* PBXTargetDependency */ = {
+		EC678D6D23339E550010DC7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC9D9860226DC61B00A250AD /* ServiceExtension */;
-			targetProxy = EC9D9866226DC61B00A250AD /* PBXContainerItemProxy */;
+			target = EC678D6623339E550010DC7E /* ServiceExtension */;
+			targetProxy = EC678D6C23339E550010DC7E /* PBXContainerItemProxy */;
 		};
-		EC9D987E226DC62A00A250AD /* PBXTargetDependency */ = {
+		EC678D8123339E710010DC7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC9D9870226DC62A00A250AD /* ContentExtension */;
-			targetProxy = EC9D987D226DC62A00A250AD /* PBXContainerItemProxy */;
+			target = EC678D7523339E710010DC7E /* ContentExtension */;
+			targetProxy = EC678D8023339E710010DC7E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC9D9879226DC62A00A250AD /* MainInterface.storyboard */ = {
+		EC678D7C23339E710010DC7E /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC9D987A226DC62A00A250AD /* Base */,
+				EC678D7D23339E710010DC7E /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -610,7 +610,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EC9D9869226DC61B00A250AD /* Debug */ = {
+		EC678D7023339E550010DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B416392D687185DB3F47F9F /* Pods-ServiceExtension.debug.xcconfig */;
 			buildSettings = {
@@ -635,7 +635,7 @@
 			};
 			name = Debug;
 		};
-		EC9D986A226DC61B00A250AD /* Release */ = {
+		EC678D7123339E550010DC7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74BFEC1DADCC3771AE96F679 /* Pods-ServiceExtension.release.xcconfig */;
 			buildSettings = {
@@ -659,7 +659,7 @@
 			};
 			name = Release;
 		};
-		EC9D9881226DC62A00A250AD /* Debug */ = {
+		EC678D8423339E710010DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC30AC3619FF1C1F696D9BD7 /* Pods-ContentExtension.debug.xcconfig */;
 			buildSettings = {
@@ -684,7 +684,7 @@
 			};
 			name = Debug;
 		};
-		EC9D9882226DC62A00A250AD /* Release */ = {
+		EC678D8523339E710010DC7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 373614D8674BDD4C35141FD2 /* Pods-ContentExtension.release.xcconfig */;
 			buildSettings = {
@@ -759,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -814,7 +814,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -828,7 +828,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13325FB1A230E095FE8A5627 /* Pods-PublicDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PublicDemo/PublicDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -850,7 +850,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40B1F2CF24C1916DD60C2F79 /* Pods-PublicDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PublicDemo/PublicDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -871,20 +871,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC9D986B226DC61B00A250AD /* Build configuration list for PBXNativeTarget "ServiceExtension" */ = {
+		EC678D6F23339E550010DC7E /* Build configuration list for PBXNativeTarget "ServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC9D9869226DC61B00A250AD /* Debug */,
-				EC9D986A226DC61B00A250AD /* Release */,
+				EC678D7023339E550010DC7E /* Debug */,
+				EC678D7123339E550010DC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC9D9880226DC62A00A250AD /* Build configuration list for PBXNativeTarget "ContentExtension" */ = {
+		EC678D8323339E710010DC7E /* Build configuration list for PBXNativeTarget "ContentExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC9D9881226DC62A00A250AD /* Debug */,
-				EC9D9882226DC62A00A250AD /* Release */,
+				EC678D8423339E710010DC7E /* Debug */,
+				EC678D8523339E710010DC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

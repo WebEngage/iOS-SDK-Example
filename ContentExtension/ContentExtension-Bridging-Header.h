@@ -1,5 +1,5 @@
-// https://docs.webengage.com/docs/ios-getting-started#section-4-support-for-swift
-// ContentExtension-Bridging-Header.h (Optional)
-// Required if ContentExtension Target is in Swift
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
 
 #import <WebEngageAppEx/WEXRichPushNotificationViewController.h>
