@@ -78,7 +78,6 @@
 		26AC5D7656C69F6E6B8EFED34D011C0D /* Pods-ContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		2A7515D413777721D104C72743457FE1 /* libWebEngageAppEx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebEngageAppEx.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30E974CF965CFB434B5A7E008EE1FDB4 /* Pods-ServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ServiceExtension-dummy.m"; sourceTree = "<group>"; };
-		34E827B55A4599308F3440137468DCDA /* WebEngage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebEngage.xcconfig; sourceTree = "<group>"; };
 		40222A1513330905A3BFFF88EC2EBC90 /* libPods-ServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46AAF35E0672871CB1D55DA7094C2488 /* WEXRichPushNotificationViewController+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WEXRichPushNotificationViewController+Private.h"; path = "WebEngageAppEx/Classes/ContentExtension/WEXRichPushNotificationViewController+Private.h"; sourceTree = "<group>"; };
 		48A1719F5CF0029D157B706AC92C3F02 /* WEXRatingPushNotificationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXRatingPushNotificationViewController.h; path = WebEngageAppEx/Classes/ContentExtension/WEXRatingPushNotificationViewController.h; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		4BD7A9698FFE8EBA3C519F7F3B34B6A9 /* Pods-PublicDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PublicDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C610B68F58BEC3699A31FA8FD937F05 /* Pods-ContentExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContentExtension-acknowledgements.plist"; sourceTree = "<group>"; };
 		4F725279E80573FEFBB2C62966669604 /* libWebEngageBannerPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebEngageBannerPush.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CF7DFCA454645B8304F1137808F6E8F /* WebEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebEngage.framework; path = xc10/WebEngage.framework; sourceTree = "<group>"; };
 		5DB81B01804D74DDF105D3E2C4EC0623 /* WEXCarouselPushNotificationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXCarouselPushNotificationViewController.m; path = WebEngageAppEx/Classes/ContentExtension/WEXCarouselPushNotificationViewController.m; sourceTree = "<group>"; };
 		5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebEngageAppEx.xcconfig; sourceTree = "<group>"; };
 		766A8D5D555D3B4C7B936EA22CAA782A /* Pods-ServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -98,6 +96,7 @@
 		9A09D68D4B74EB991FA2A304E8B077B2 /* WEXCoreUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXCoreUtils.m; path = WebEngageAppEx/Classes/CoreApi/WEXCoreUtils.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7056297D842B9E7A6CFB10113F60C71 /* WEXRichPushNotificationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXRichPushNotificationViewController.m; path = WebEngageAppEx/Classes/ContentExtension/WEXRichPushNotificationViewController.m; sourceTree = "<group>"; };
+		AA6835A423354E2AF7141215B75EC2E3 /* WebEngage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebEngage.framework; path = xc11/WebEngage.framework; sourceTree = "<group>"; };
 		AC1C430B42771B68ED4F3BF286280972 /* WEXRichPushLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXRichPushLayout.m; path = WebEngageAppEx/Classes/ContentExtension/WEXRichPushLayout.m; sourceTree = "<group>"; };
 		B017A0C8E6D1A9C9840A646AF5924C72 /* Pods-PublicDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PublicDemo-dummy.m"; sourceTree = "<group>"; };
 		B0239D1254A6948C3D09611039B9F9B9 /* Pods-ContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContentExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		BF2D0AF822C44015681807019EBAD832 /* WEXUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXUser.h; path = WebEngageAppEx/Classes/CoreApi/WEXUser.h; sourceTree = "<group>"; };
 		C1572671F044A7E7897BB6E7C48250A5 /* Pods-ServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		CA84E3A8B8524E23C159C19A4282E2D4 /* Pods-PublicDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PublicDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebEngage.xcconfig; sourceTree = "<group>"; };
 		CBD4D1B8F5F7D664DC0516512BA2696E /* libPods-PublicDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublicDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99AA9D00A490D2E22A191381F30D8A4 /* WEXCoreUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WEXCoreUtils.h; path = WebEngageAppEx/Classes/CoreApi/WEXCoreUtils.h; sourceTree = "<group>"; };
 		DF95E816DE2419640EE74E258149AD2B /* WEXPushNotificationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WEXPushNotificationService.m; path = WebEngageAppEx/Classes/NotificationService/WEXPushNotificationService.m; sourceTree = "<group>"; };
@@ -180,12 +180,30 @@
 			path = WebEngageBannerPush;
 			sourceTree = "<group>";
 		};
-		2027068D3C28A81121150F89545CCC39 /* Frameworks */ = {
+		0EC9EC846A66830F152F4E75BE5E4911 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CF7DFCA454645B8304F1137808F6E8F /* WebEngage.framework */,
+				AA6835A423354E2AF7141215B75EC2E3 /* WebEngage.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19407F41BC96507046406FC1641A4433 /* WebEngage */ = {
+			isa = PBXGroup;
+			children = (
+				25CC72600EECF3FACCE186F92B237B5F /* Support Files */,
+				431F9CE3C2056065432651F85856EF55 /* Xcode11 */,
+			);
+			path = WebEngage;
+			sourceTree = "<group>";
+		};
+		25CC72600EECF3FACCE186F92B237B5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WebEngage";
 			sourceTree = "<group>";
 		};
 		3880914A40005FC2DBBCC8A339228EB6 /* Pods-PublicDemo */ = {
@@ -212,10 +230,18 @@
 			path = WebEngageAppEx;
 			sourceTree = "<group>";
 		};
+		431F9CE3C2056065432651F85856EF55 /* Xcode11 */ = {
+			isa = PBXGroup;
+			children = (
+				0EC9EC846A66830F152F4E75BE5E4911 /* Frameworks */,
+			);
+			name = Xcode11;
+			sourceTree = "<group>";
+		};
 		44A6999E059753F990D33CC2D2CFA361 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CED7E8A45236F6C9FAA06CA2D43B94E3 /* WebEngage */,
+				19407F41BC96507046406FC1641A4433 /* WebEngage */,
 				3F52A2DE3670D782B2726E7AC3065CA5 /* WebEngageAppEx */,
 				0C2403871972DE4A44893B82A353E8AA /* WebEngageBannerPush */,
 			);
@@ -296,15 +322,6 @@
 			path = "Target Support Files/Pods-ContentExtension";
 			sourceTree = "<group>";
 		};
-		CED7E8A45236F6C9FAA06CA2D43B94E3 /* WebEngage */ = {
-			isa = PBXGroup;
-			children = (
-				DD25CB349A1C11080B7989033F8859E8 /* Support Files */,
-				F1B72EAEC1F4DFA378FA23492444E1FF /* Xcode10 */,
-			);
-			path = WebEngage;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -323,15 +340,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DD25CB349A1C11080B7989033F8859E8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				34E827B55A4599308F3440137468DCDA /* WebEngage.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WebEngage";
-			sourceTree = "<group>";
-		};
 		E2E945877BC4A032A472C7003E493411 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,14 +350,6 @@
 				4F725279E80573FEFBB2C62966669604 /* libWebEngageBannerPush.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F1B72EAEC1F4DFA378FA23492444E1FF /* Xcode10 */ = {
-			isa = PBXGroup;
-			children = (
-				2027068D3C28A81121150F89545CCC39 /* Frameworks */,
-			);
-			name = Xcode10;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -595,6 +595,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		190B6F515BEF922659B48008630C2F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AC5D7656C69F6E6B8EFED34D011C0D /* Pods-ContentExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -659,36 +681,9 @@
 			};
 			name = Debug;
 		};
-		1EB9F886FE3CEA79E81485DACBF11F37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/WebEngageAppEx/WebEngageAppEx-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = WebEngageAppEx;
-				PRODUCT_NAME = WebEngageAppEx;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		1F10EA43401F8EE21180088725803B65 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E827B55A4599308F3440137468DCDA /* WebEngage.xcconfig */;
+			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -702,12 +697,11 @@
 			};
 			name = Debug;
 		};
-		3C77C6A82DF6E953B4D917727E0EBC53 /* Debug */ = {
+		2D8EB83241AEE06D2F7AE9A39F305E5D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26AC5D7656C69F6E6B8EFED34D011C0D /* Pods-ContentExtension.debug.xcconfig */;
+			baseConfigurationReference = B0239D1254A6948C3D09611039B9F9B9 /* Pods-ContentExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -722,38 +716,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
-		49112F16B43FFEBD276A67201DF292B2 /* Debug */ = {
+		3F4C8672B13D4B622D2DA4A70A6BED44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */;
+			baseConfigurationReference = 0A1AFAB2FC67CFA6C5937DFCE46B2400 /* WebEngageBannerPush.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/WebEngageAppEx/WebEngageAppEx-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/WebEngageBannerPush/WebEngageBannerPush-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = WebEngageAppEx;
-				PRODUCT_NAME = WebEngageAppEx;
+				PRODUCT_MODULE_NAME = WebEngageBannerPush;
+				PRODUCT_NAME = WebEngageBannerPush;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		491B5B9CAB6C175E73737F87DDAA66C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E827B55A4599308F3440137468DCDA /* WebEngage.xcconfig */;
+			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -791,12 +786,11 @@
 			};
 			name = Release;
 		};
-		774541EB55147511DBF7B5F9B3809BA4 /* Debug */ = {
+		ACDF9CDEA71752CDA4EDCFBD6078EF26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1572671F044A7E7897BB6E7C48250A5 /* Pods-ServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -810,83 +804,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		9818F4C07D6CD6F08E2D4086BF5FDFD6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B713C1B5780A54C8B2D8410FE226C75B /* Pods-ServiceExtension.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		9E50DC5338B12414FEF3F9F4F0C58F82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A1AFAB2FC67CFA6C5937DFCE46B2400 /* WebEngageBannerPush.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/WebEngageBannerPush/WebEngageBannerPush-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = WebEngageBannerPush;
-				PRODUCT_NAME = WebEngageBannerPush;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A9C7D59780BBC4CA45051956F79AA42C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A1AFAB2FC67CFA6C5937DFCE46B2400 /* WebEngageBannerPush.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/WebEngageBannerPush/WebEngageBannerPush-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = WebEngageBannerPush;
-				PRODUCT_NAME = WebEngageBannerPush;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -973,12 +890,62 @@
 			};
 			name = Debug;
 		};
-		E791BDB9B54DEE78441016924C2C075C /* Release */ = {
+		C11B66396C8F806BC8B6D2E43951763E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0239D1254A6948C3D09611039B9F9B9 /* Pods-ContentExtension.release.xcconfig */;
+			baseConfigurationReference = 5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WebEngageAppEx/WebEngageAppEx-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WebEngageAppEx;
+				PRODUCT_NAME = WebEngageAppEx;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D904048A62C6D51B4C3782E2DD2011FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1AFAB2FC67CFA6C5937DFCE46B2400 /* WebEngageBannerPush.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WebEngageBannerPush/WebEngageBannerPush-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WebEngageBannerPush;
+				PRODUCT_NAME = WebEngageBannerPush;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0276C9EF56D4320AF794BEA21C5935C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B713C1B5780A54C8B2D8410FE226C75B /* Pods-ServiceExtension.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -997,6 +964,31 @@
 			};
 			name = Release;
 		};
+		EBBC6F00B4EDE7AAD781E6242758DB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0B3534DC8F89B5686E45FC4D4C1C4E /* WebEngageAppEx.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/WebEngageAppEx/WebEngageAppEx-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WebEngageAppEx;
+				PRODUCT_NAME = WebEngageAppEx;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1012,8 +1004,8 @@
 		27148ABB54CB253F0B3ABDE4E23146B1 /* Build configuration list for PBXNativeTarget "Pods-ContentExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C77C6A82DF6E953B4D917727E0EBC53 /* Debug */,
-				E791BDB9B54DEE78441016924C2C075C /* Release */,
+				190B6F515BEF922659B48008630C2F5D /* Debug */,
+				2D8EB83241AEE06D2F7AE9A39F305E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1039,8 +1031,8 @@
 		73555506C779BFD2634FD8B13C99BACC /* Build configuration list for PBXNativeTarget "WebEngageBannerPush" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9C7D59780BBC4CA45051956F79AA42C /* Debug */,
-				9E50DC5338B12414FEF3F9F4F0C58F82 /* Release */,
+				D904048A62C6D51B4C3782E2DD2011FD /* Debug */,
+				3F4C8672B13D4B622D2DA4A70A6BED44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1048,8 +1040,8 @@
 		A3D5A0A3391B91E53512B094A405564B /* Build configuration list for PBXNativeTarget "Pods-ServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				774541EB55147511DBF7B5F9B3809BA4 /* Debug */,
-				9818F4C07D6CD6F08E2D4086BF5FDFD6 /* Release */,
+				ACDF9CDEA71752CDA4EDCFBD6078EF26 /* Debug */,
+				E0276C9EF56D4320AF794BEA21C5935C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1057,8 +1049,8 @@
 		D457079D17EFBBC20D5DCD31F0ABBACE /* Build configuration list for PBXNativeTarget "WebEngageAppEx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49112F16B43FFEBD276A67201DF292B2 /* Debug */,
-				1EB9F886FE3CEA79E81485DACBF11F37 /* Release */,
+				EBBC6F00B4EDE7AAD781E6242758DB17 /* Debug */,
+				C11B66396C8F806BC8B6D2E43951763E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

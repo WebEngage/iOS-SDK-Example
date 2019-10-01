@@ -1,7 +1,7 @@
 PODS:
-  - WebEngage (4.9.7):
-    - WebEngage/Xcode10 (= 4.9.7)
-  - WebEngage/Xcode10 (4.9.7)
+  - WebEngage (4.9.8):
+    - WebEngage/Xcode11 (= 4.9.8)
+  - WebEngage/Xcode11 (4.9.8)
   - WebEngageAppEx/ContentExtension (0.5.0):
     - WebEngageAppEx/CoreApi
   - WebEngageAppEx/CoreApi (0.5.0)
@@ -13,16 +13,16 @@ DEPENDENCIES:
   - WebEngageBannerPush
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - WebEngage
     - WebEngageAppEx
     - WebEngageBannerPush
 
 SPEC CHECKSUMS:
-  WebEngage: 2aec067ea2a8c15f5966581cca5bf766d44ef367
+  WebEngage: c25fcdfbb6088d403816e80091be6713db93521d
   WebEngageAppEx: 9ff48d10f34add071dcf06314d37f9d7a8f1c695
   WebEngageBannerPush: f6a58fbeb4d9f04d5ca9cc381e3ee521b70c4205
 
 PODFILE CHECKSUM: 427d0c97c6f42658fd9632c8ae5355a6e772a5b9
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.1

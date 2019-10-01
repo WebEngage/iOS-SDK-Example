@@ -161,12 +161,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/WebEngage/xc10/WebEngage.framework"
-  install_dsym "${PODS_ROOT}/WebEngage/xc10/WebEngage.framework.dSYM"
+  install_framework "${PODS_ROOT}/WebEngage/xc11/WebEngage.framework"
+  install_dsym "${PODS_ROOT}/WebEngage/xc11/WebEngage.framework.dSYM"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/WebEngage/xc10/WebEngage.framework"
-  install_dsym "${PODS_ROOT}/WebEngage/xc10/WebEngage.framework.dSYM"
+  install_framework "${PODS_ROOT}/WebEngage/xc11/WebEngage.framework"
+  install_dsym "${PODS_ROOT}/WebEngage/xc11/WebEngage.framework.dSYM"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
