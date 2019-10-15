@@ -1,7 +1,7 @@
 PODS:
-  - WebEngage (4.9.9):
-    - WebEngage/Xcode11 (= 4.9.9)
-  - WebEngage/Xcode11 (4.9.9)
+  - WebEngage (5.0.0):
+    - WebEngage/Xcode11 (= 5.0.0)
+  - WebEngage/Xcode11 (5.0.0)
   - WebEngageAppEx/ContentExtension (0.5.0):
     - WebEngageAppEx/CoreApi
   - WebEngageAppEx/CoreApi (0.5.0)
@@ -19,7 +19,7 @@ SPEC REPOS:
     - WebEngageBannerPush
 
 SPEC CHECKSUMS:
-  WebEngage: d4504dc03965cc6408333f19b45b5456df4b5f8a
+  WebEngage: a58c302918d98443329ec3b937a770fa51a21b6a
   WebEngageAppEx: 9ff48d10f34add071dcf06314d37f9d7a8f1c695
   WebEngageBannerPush: f6a58fbeb4d9f04d5ca9cc381e3ee521b70c4205
 
