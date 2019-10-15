@@ -25,15 +25,15 @@ WebEngage SDK is supported for `iOS8` and above. The following frameworks should
 
   1. Add the following to your Podfile
 
-          # For Xcode 10 and above:
+          # For Xcode 11 and above:
 
           target 'WebEngageExample' do
               pod 'WebEngage'
           end
 
-          # For Xcode 9:
+          # For Xcode 10:
           target 'WebEngageExample' do
-              pod 'WebEngage/Xcode9'
+              pod 'WebEngage/Xcode10'
           end
 
 2. Install WebEngage SDK by running `pod install`
@@ -45,7 +45,7 @@ Learn about Podfile Specifications [here](https://guides.cocoapods.org/using/the
 
 #### 2. Direct Integration (Manual) ####
 
-1. Download the SDK file [here](https://s3-us-west-2.amazonaws.com/webengage-sdk/ios/latest/WebEngageFramework.zip). Extract the downloaded zip file. In the extracted zip there would be two directories - xc6 and xc7. If you are using Xcode 9 use the `Webengage.framework` within the `xc9` directory. For Xcode 10 and above use the one in `xc10`. Save the appropriate `Webengage.framework` it in a location on your computer.
+1. Download the SDK file [here](https://s3-us-west-2.amazonaws.com/webengage-sdk/ios/latest/WebEngageFramework.zip). Extract the downloaded zip file. In the extracted zip there would be two directories - xc10 and xc11. If you are using Xcode 10 use the `Webengage.framework` within the `xc10` directory. For Xcode 11 and above use the one in `xc11`. Save the appropriate `Webengage.framework` it in a location on your computer.
 
 2. Select the name of the project in the project navigator. The project editor appears in the editor area of the Xcode workspace window.
 
