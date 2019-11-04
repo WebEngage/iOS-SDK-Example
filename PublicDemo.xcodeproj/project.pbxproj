@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3D43B09C0F118BFD67FA4012 /* libPods-ContentExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6519F92FA5D02EACF89F4229 /* libPods-ContentExtension.a */; };
 		6C53C3730AA00AAABAA54454 /* libPods-ServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C193AE0829C77E4BD1287DA /* libPods-ServiceExtension.a */; };
 		BFA32ACFDD81CF733B99F122 /* libPods-PublicDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C13ED44139588E90AA876142 /* libPods-PublicDemo.a */; };
-		EC394C30234F444C002E490B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EC394C2F234F444C002E490B /* Alamofire */; };
 		EC678D6A23339E550010DC7E /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC678D6923339E550010DC7E /* NotificationService.swift */; };
 		EC678D6E23339E550010DC7E /* ServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EC678D6723339E550010DC7E /* ServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EC678D7723339E710010DC7E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9D9872226DC62A00A250AD /* UserNotifications.framework */; };
@@ -152,7 +151,6 @@
 				EC848A50226DDEEF004171EF /* CoreLocation.framework in Frameworks */,
 				EC848A4E226DDEE8004171EF /* SystemConfiguration.framework in Frameworks */,
 				EC848A2F226DD29F004171EF /* libsqlite3.tbd in Frameworks */,
-				EC394C30234F444C002E490B /* Alamofire in Frameworks */,
 				ECFCD670226DBEC10015961D /* AdSupport.framework in Frameworks */,
 				BFA32ACFDD81CF733B99F122 /* libPods-PublicDemo.a in Frameworks */,
 			);
@@ -353,7 +351,6 @@
 			);
 			name = PublicDemo;
 			packageProductDependencies = (
-				EC394C2F234F444C002E490B /* Alamofire */,
 			);
 			productName = "Public Demo";
 			productReference = ECFCD659226DBEA10015961D /* PublicDemo.app */;
@@ -416,7 +413,6 @@
 			);
 			mainGroup = ECFCD650226DBEA10015961D;
 			packageReferences = (
-				EC394C2E234F444C002E490B /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = ECFCD65A226DBEA10015961D /* Products */;
 			projectDirPath = "";
@@ -916,25 +912,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		EC394C2E234F444C002E490B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.9.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		EC394C2F234F444C002E490B /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EC394C2E234F444C002E490B /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECFCD651226DBEA10015961D /* Project object */;
 }
