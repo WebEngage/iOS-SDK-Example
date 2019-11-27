@@ -202,7 +202,7 @@ API_AVAILABLE(ios(10.0))
     if (titlePresent) {
         titleLabel = [[UILabel alloc] init];
         
-        titleLabel.textAlignment = NSTextAlignmentLeft;
+        titleLabel.textAlignment = [self.viewController naturalTextAligmentForText:title];
         titleLabel.text = title;
         titleLabel.font = [UIFont boldSystemFontOfSize:[UIFont labelFontSize]];
         if (textColor) {
@@ -216,7 +216,7 @@ API_AVAILABLE(ios(10.0))
     
     if (messagePresent) {
         UILabel *messageLabel = [[UILabel alloc] init];
-        messageLabel.textAlignment = NSTextAlignmentLeft;
+        messageLabel.textAlignment = [self.viewController naturalTextAligmentForText:message];
         messageLabel.text = message;
         
         if (textColor) {

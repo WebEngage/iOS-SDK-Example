@@ -24,6 +24,8 @@
 
 - (void)setCTAWithId:(NSString *)ctaId andLink:(NSString *)actionLink;
 
+- (NSTextAlignment)naturalTextAligmentForText:(NSString*) text;
+
 #endif
 
 @end

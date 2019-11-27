@@ -262,12 +262,12 @@ API_AVAILABLE(ios(10.0))
         titleLabel.text = notification.request.content.title;
         titleLabel.textColor = [UIColor blackColor];
         titleLabel.font = [UIFont boldSystemFontOfSize:[UIFont labelFontSize]];
-        titleLabel.textAlignment = NSTextAlignmentLeft;
+        titleLabel.textAlignment = [self.viewController naturalTextAligmentForText:titleLabel.text];
         
         UILabel *bodyLabel = [[UILabel alloc] init];
         bodyLabel.text = notification.request.content.body;
         bodyLabel.textColor = [UIColor blackColor];
-        bodyLabel.textAlignment = NSTextAlignmentLeft;
+        bodyLabel.textAlignment = [self.viewController naturalTextAligmentForText:bodyLabel.text];
         bodyLabel.numberOfLines = 0;
         
         [notificationContentView addSubview:titleLabel];
