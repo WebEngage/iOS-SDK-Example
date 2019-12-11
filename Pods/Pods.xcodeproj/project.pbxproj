@@ -683,22 +683,6 @@
 			};
 			name = Debug;
 		};
-		1F10EA43401F8EE21180088725803B65 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		2D8EB83241AEE06D2F7AE9A39F305E5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B0239D1254A6948C3D09611039B9F9B9 /* Pods-ContentExtension.release.xcconfig */;
@@ -743,23 +727,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		491B5B9CAB6C175E73737F87DDAA66C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -943,6 +910,24 @@
 			};
 			name = Debug;
 		};
+		DB68A9615FE8189535BF1B0E629E4C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		E0276C9EF56D4320AF794BEA21C5935C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B713C1B5780A54C8B2D8410FE226C75B /* Pods-ServiceExtension.release.xcconfig */;
@@ -965,6 +950,23 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		E5D657B1144BDF60DC121A9939ED086A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC60C01816A69CB88216DEE128C0D44 /* WebEngage.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		EBBC6F00B4EDE7AAD781E6242758DB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -997,8 +999,8 @@
 		13C4FF550E776EF78EF5C9D2B1F24144 /* Build configuration list for PBXAggregateTarget "WebEngage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F10EA43401F8EE21180088725803B65 /* Debug */,
-				491B5B9CAB6C175E73737F87DDAA66C4 /* Release */,
+				E5D657B1144BDF60DC121A9939ED086A /* Debug */,
+				DB68A9615FE8189535BF1B0E629E4C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
