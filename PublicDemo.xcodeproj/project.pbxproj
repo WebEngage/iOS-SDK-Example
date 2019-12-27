@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -341,7 +341,7 @@
 				ECFCD656226DBEA10015961D /* Frameworks */,
 				ECFCD657226DBEA10015961D /* Resources */,
 				EC9D986C226DC61B00A250AD /* Embed App Extensions */,
-				703207CEEC5DD78D7E39DDF9 /* [CP] Embed Pods Frameworks */,
+				55D33DD99E506186EB962B9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,8 +350,6 @@
 				EC678D8123339E710010DC7E /* PBXTargetDependency */,
 			);
 			name = PublicDemo;
-			packageProductDependencies = (
-			);
 			productName = "Public Demo";
 			productReference = ECFCD659226DBEA10015961D /* PublicDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -404,7 +402,7 @@
 				};
 			};
 			buildConfigurationList = ECFCD654226DBEA10015961D /* Build configuration list for PBXProject "PublicDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -412,8 +410,6 @@
 				Base,
 			);
 			mainGroup = ECFCD650226DBEA10015961D;
-			packageReferences = (
-			);
 			productRefGroup = ECFCD65A226DBEA10015961D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,7 +477,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		703207CEEC5DD78D7E39DDF9 /* [CP] Embed Pods Frameworks */ = {
+		55D33DD99E506186EB962B9F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
