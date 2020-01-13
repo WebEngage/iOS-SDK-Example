@@ -9,7 +9,7 @@ Detailed Setup Guide available [here](https://docs.webengage.com/docs/ios-gettin
 
 #### Minimum SDK Requirements ####
 
-WebEngage SDK is supported for `iOS8` and above. The following frameworks should be linked as part of the Xcode project (Direct Integration).
+WebEngage SDK is supported for `iOS 10` and above. The following frameworks should be linked as part of the Xcode project (Direct Integration).
 
     1. CoreLocation.framework
 
